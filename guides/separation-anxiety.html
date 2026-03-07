@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dog Separation Anxiety: The Complete Guide 2026 | CalmPaws</title>
   <meta name="description" content="Complete guide to dog separation anxiety — signs, causes, and the exact product + training protocol that actually works. Vet-reviewed for 2026."/>
-  <link rel="canonical" href="https://calmpaws.com/guides/separation-anxiety"/>
+  <link rel="canonical" href="https://saadaijaz890.github.io/calmpaw/guides/separation-anxiety"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
     :root{--cream:#FAF7F2;--warm-white:#FFFEF9;--bark:#2C1A0E;--bark-light:#5C3D2A;--moss:#3D5A3E;--moss-light:#6B8F6C;--sand:#D4A96A;--sand-light:#EDD9B0;--text:#1A1208;--text-muted:#6B5A4A;--shadow:0 4px 32px rgba(44,26,14,.10)}
@@ -67,6 +68,18 @@
 
   
     .guide-hero-img{width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,.25);box-shadow:0 6px 24px rgba(0,0,0,.15);margin-bottom:1rem;display:block}
+  
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:.5rem;background:none;border:none;z-index:200}
+    .hamburger span{display:block;width:22px;height:2px;background:var(--bark);border-radius:2px;transition:all .3s}
+    .hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+    .hamburger.open span:nth-child(2){opacity:0}
+    .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+    .mobile-menu{display:none;position:fixed;inset:0;background:var(--cream);z-index:150;padding:80px 2rem 2rem;flex-direction:column;overflow-y:auto}
+    .mobile-menu.open{display:flex}
+    .mobile-menu a{font-size:1.1rem;font-weight:500;color:var(--bark);text-decoration:none;padding:1rem 0;border-bottom:1px solid var(--sand-light);transition:color .2s}
+    .mobile-menu a:hover{color:var(--moss)}
+    .mobile-menu .mob-cta{background:var(--moss);color:white!important;border-radius:100px;text-align:center;padding:.9rem 1.5rem;margin-top:1.5rem;border:none}
+    @media(max-width:768px){.hamburger{display:flex}}
   </style>
 </head>
 <body>
@@ -78,6 +91,7 @@
     <a href="../#faq">FAQ</a>
     <a href="../#products" class="nav-cta">Shop Now</a>
   </nav>
+<button class="hamburger" id="menuToggle" aria-label="Menu" onclick="var m=document.getElementById('mobileNav');m.classList.toggle('open');this.classList.toggle('open')"><span></span><span></span><span></span></button>
 </header>
 <div class="breadcrumb"><a href="../">Home</a> › <a href="../#guides">Guides</a> › Separation Anxiety</div>
 <div class="hero-article">
@@ -142,8 +156,10 @@
   <div><a href="../" class="logo">Calm<span style="color:var(--sand)">Paws</span></a><p>Helping anxious dogs find calm since 2024.</p></div>
   <div><h4>Top Guides</h4><ul><li><a href="../guides/calming-chews.html">Calming Chews</a></li><li><a href="../guides/thundershirt-review.html">Thundershirt Review</a></li><li><a href="../guides/separation-anxiety.html">Separation Anxiety</a></li><li><a href="../guides/nighttime-anxiety.html">Nighttime Anxiety</a></li></ul></div>
   <div><h4>By Breed</h4><ul><li><a href="../breeds/pug.html">Pug</a></li><li><a href="../breeds/corgi.html">Corgi</a></li><li><a href="../breeds/golden-retriever.html">Golden Retriever</a></li></ul></div>
-  <div><h4>Resources</h4><ul><li><a href="../resourses/about.html">About</a></li><li><a href="../resourses/affiliate-disclosure.html">Affiliate Disclosure</a></li></ul></div>
+  <div><h4>Resources</h4><ul><li><a href="../resources/about.html">About</a></li><li><a href="../resources/affiliate-disclosure.html">Affiliate Disclosure</a></li></ul></div>
 </footer>
 <div class="footer-bottom">© 2026 CalmPaws.com — Not a substitute for veterinary advice.</div>
+<div class="mobile-menu" id="mobileNav"><a href="../#guides" onclick="document.getElementById('mobileNav').classList.remove('open');document.getElementById('menuToggle').classList.remove('open')">Breed Guides</a><a href="../#products" onclick="document.getElementById('mobileNav').classList.remove('open');document.getElementById('menuToggle').classList.remove('open')">Top Products</a><a href="../#faq" onclick="document.getElementById('mobileNav').classList.remove('open');document.getElementById('menuToggle').classList.remove('open')">FAQ</a><a href="../#products" class="mob-cta" onclick="document.getElementById('mobileNav').classList.remove('open');document.getElementById('menuToggle').classList.remove('open')">Shop Now</a></div>
+<script>(function(){var img=document.querySelector('.breed-hero-img,.guide-hero-img');if(img)fetch('https://dog.ceo/api/breeds/image/random').then(function(r){return r.json()}).then(function(d){if(d.status==='success')img.src=d.message}).catch(function(){});})();</script>
 </body>
 </html>

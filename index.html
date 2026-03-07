@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Calm Paws — Dog Anxiety Solutions That Actually Work</title>
   <meta name="description" content="Expert-reviewed calming products for anxious dogs. Breed-specific guides, vet-approved supplements, and honest reviews. Find the right solution for your dog today."/>
   <meta name="keywords" content="dog anxiety solutions, calming bed for dogs, dog separation anxiety, thunderstorm phobia dogs, calming chews for dogs"/>
-  <link rel="canonical" href="https://calmpaws.com/"/>
+  <link rel="canonical" href="https://saadaijaz890.github.io/calmpaw/"/>
   <meta property="og:title" content="Calm Paws — Dog Anxiety Solutions"/>
   <meta property="og:description" content="Breed-specific calming guides and vet-reviewed products for anxious dogs."/>
   <meta property="og:type" content="website"/>
@@ -118,6 +119,18 @@
     .reveal{opacity:1;transform:translateY(0);transition:opacity .5s ease,transform .5s ease}
     .reveal.visible{opacity:1;transform:translateY(0)}
     @media(max-width:768px){.hero{grid-template-columns:1fr;padding:4rem 5vw 3rem;gap:2rem}.hero-visual{display:none}nav{display:none}footer{grid-template-columns:1fr 1fr}.faq-grid{grid-template-columns:1fr}.trust-bar{gap:1.5rem}.cta-banner{padding:2.5rem 1.5rem;margin:0 5vw 3rem}}
+  
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:.5rem;background:none;border:none;z-index:200}
+    .hamburger span{display:block;width:22px;height:2px;background:var(--bark);border-radius:2px;transition:all .3s}
+    .hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+    .hamburger.open span:nth-child(2){opacity:0}
+    .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+    .mobile-menu{display:none;position:fixed;inset:0;background:var(--cream);z-index:150;padding:80px 2rem 2rem;flex-direction:column;overflow-y:auto}
+    .mobile-menu.open{display:flex}
+    .mobile-menu a{font-size:1.1rem;font-weight:500;color:var(--bark);text-decoration:none;padding:1rem 0;border-bottom:1px solid var(--sand-light);transition:color .2s}
+    .mobile-menu a:hover{color:var(--moss)}
+    .mobile-menu .mob-cta{background:var(--moss);color:white!important;border-radius:100px;text-align:center;padding:.9rem 1.5rem;margin-top:1.5rem;border:none}
+    @media(max-width:768px){.hamburger{display:flex}}
   </style>
 </head>
 <body>
@@ -129,6 +142,7 @@
     <a href="#faq">FAQ</a>
     <a href="#products" class="nav-cta">Shop Now</a>
   </nav>
+<button class="hamburger" id="menuToggle" aria-label="Menu" onclick="var m=document.getElementById('mobileNav');m.classList.toggle('open');this.classList.toggle('open')"><span></span><span></span><span></span></button>
 </header>
 
 <section class="hero">
@@ -184,11 +198,11 @@
       <div class="article-thumb" style="background:linear-gradient(135deg,#D4A96A,#8B5E3C);display:flex;align-items:center;justify-content:center;font-size:3.5rem;position:relative"><span style="font-size:3.5rem;line-height:1;z-index:1">🐕</span><span class="card-cat">QUICK-FIX</span></div>
       <div class="article-body"><h3>How Long Do Calming Chews Take to Work?</h3><p>The #1 question dog owners ask. We answer in the first paragraph, then break down every top brand by speed, ingredients, and cost.</p></div>
     </a>
-    <a href="guides/calming-chews.html" class="article-card reveal">
+    <a href="guides/separation-anxiety.html" class="article-card reveal">
       <div class="article-thumb" style="background:linear-gradient(135deg,#6B8F6C,#3D5A3E);display:flex;align-items:center;justify-content:center;font-size:3.5rem;position:relative"><span style="font-size:3.5rem;line-height:1;z-index:1">🐾</span><span class="card-cat">PRODUCT ROUNDUP</span></div>
       <div class="article-body"><h3>Best Heartbeat Sheep Toy for Puppy Anxiety</h3><p>We compare Snuggle Puppy vs 3 competitors — which one keeps puppies calm through the night?</p></div>
     </a>
-    <a href="guides/thundershirt-review.html" class="article-card reveal">
+    <a href="guides/calming-chews.html" class="article-card reveal">
       <div class="article-thumb" style="background:linear-gradient(135deg,#E8C4A0,#C49A6C);display:flex;align-items:center;justify-content:center;font-size:3.5rem;position:relative"><span style="font-size:3.5rem;line-height:1;z-index:1">🦴</span><span class="card-cat">COMPARISON</span></div>
       <div class="article-body"><h3>Zylkene vs Purina Pro Plan Calming Care: Which Wins?</h3><p>Side-by-side table: ingredients, price per dose, onset time, and real owner reviews. No site has done this comparison properly — until now.</p></div>
     </a>
@@ -200,7 +214,7 @@
       <div class="article-thumb" style="background:linear-gradient(135deg,#9B7DBF,#6B4FA0);display:flex;align-items:center;justify-content:center;font-size:3.5rem;position:relative"><span style="font-size:3.5rem;line-height:1;z-index:1">🏠</span><span class="card-cat">SITUATIONAL</span></div>
       <div class="article-body"><h3>Top-Rated Calming Collars for Dogs During House Moving</h3><p>Moving day is one of the most stressful events for dogs. This guide covers collars + diffusers + protocols to keep your dog calm throughout.</p></div>
     </a>
-    <a href="guides/calming-chews.html" class="article-card reveal">
+    <a href="guides/thundershirt-review.html" class="article-card reveal">
       <div class="article-thumb" style="background:linear-gradient(135deg,#D4A96A,#A07840);display:flex;align-items:center;justify-content:center;font-size:3.5rem;position:relative"><span style="font-size:3.5rem;line-height:1;z-index:1">✂️</span><span class="card-cat">GROOMING</span></div>
       <div class="article-body"><h3>Calming Treats for Dogs During Grooming Sessions</h3><p>Give 30 minutes before grooming. Here are 5 best calming treats ranked by speed, palatability, and whether they actually work at the groomer.</p></div>
     </a>
@@ -268,9 +282,9 @@
     <p>Helping anxious dogs and their owners find calm since 2024. All product recommendations are independently researched. We participate in the Amazon Associates Program and Chewy affiliate program.</p>
     <div class="affiliate-note">⚠️ <strong style="color:rgba(255,255,255,.5)">Affiliate Disclosure:</strong> CalmPaws.com earns commissions when you purchase through our links, at no additional cost to you. This never influences our recommendations.</div>
   </div>
-  <div><h4>Top Guides</h4><ul><li><a href="guides/calming-chews.html">Calming Chews Guide</a></li><li><a href="guides/thundershirt-review.html">Thundershirt Review</a></li><li><a href="guides/separation-anxiety.html">Separation Anxiety</a></li><li><a href="guides/nighttime-anxiety.html">Nighttime Anxiety</a></li><li><a href="guides/calming-chews.html">Vet Visit Anxiety</a></li></ul></div>
+  <div><h4>Top Guides</h4><ul><li><a href="guides/calming-chews.html">Calming Chews Guide</a></li><li><a href="guides/thundershirt-review.html">Thundershirt Review</a></li><li><a href="guides/separation-anxiety.html">Separation Anxiety</a></li><li><a href="guides/nighttime-anxiety.html">Nighttime Anxiety</a></li><li><a href="guides/nighttime-anxiety.html">Nighttime Anxiety</a></li></ul></div>
   <div><h4>By Breed</h4><ul><li><a href="breeds/pug.html">Pug Anxiety</a></li><li><a href="breeds/corgi.html">Corgi Anxiety</a></li><li><a href="breeds/chihuahua.html">Chihuahua Anxiety</a></li><li><a href="breeds/pitbull.html">Pitbull Anxiety</a></li><li><a href="breeds/border-collie.html">Border Collie</a></li></ul></div>
-  <div><h4>Resources</h4><ul><li><a href="resourses/about.html">About CalmPaws</a></li><li><a href="resourses/privacy.html">Privacy Policy</a></li><li><a href="resourses/affiliate-disclosure.html">Affiliate Disclosure</a></li><li><a href="/cdn-cgi/l/email-protection#8ee6ebe2e2e1ceedefe2e3feeff9fda0ede1e3">Contact</a></li><li><a href="llm.txt">llm.txt</a></li></ul></div>
+  <div><h4>Resources</h4><ul><li><a href="resources/about.html">About CalmPaws</a></li><li><a href="resources/privacy.html">Privacy Policy</a></li><li><a href="resources/affiliate-disclosure.html">Affiliate Disclosure</a></li><li><a href="/cdn-cgi/l/email-protection#8ee6ebe2e2e1ceedefe2e3feeff9fda0ede1e3">Contact</a></li><li><a href="llm.txt">llm.txt</a></li></ul></div>
 </footer>
 <div class="footer-bottom">© 2026 CalmPaws.com — Not a substitute for veterinary advice. Always consult your vet.</div>
 
