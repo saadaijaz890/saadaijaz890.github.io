@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /resources/privacy.html
+Disallow: /resources/affiliate-disclosure.html
 
 User-agent: GPTBot
 Allow: /
@@ -10,4 +12,4 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-Sitemap: https://calmpaws.com/sitemap.xml
+Sitemap: https://saadaijaz890.github.io/calmpaw/sitemap.xml
