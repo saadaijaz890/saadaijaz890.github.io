@@ -3,7 +3,9 @@
     "allow": [
       "Bash(start:*)",
       "Bash(gh auth:*)",
-      "Bash(git config:*)"
+      "Bash(git config:*)",
+      "Bash(gh repo:*)",
+      "Bash(gh api:*)"
     ]
   }
 }
