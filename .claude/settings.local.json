@@ -20,7 +20,15 @@
       "WebFetch(domain:puptalk.co.uk)",
       "WebFetch(domain:theprogress.com)",
       "WebFetch(domain:www.newsweek.com)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "WebFetch(domain:www.googleapis.com)",
+      "WebFetch(domain:pagespeed.web.dev)",
+      "Bash(cd /c/Users/Saad/Downloads/calmpaw/fonts && \\\\\ncurl -sL \"https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu0-K4.woff2\" -o \"dm-sans-400-latin.woff2\" && \\\\\ncurl -sL \"https://fonts.gstatic.com/s/dmsans/v17/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu6-K6h9Q.woff2\" -o \"dm-sans-400-latin-ext.woff2\" && \\\\\ncurl -sL \"https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2\" -o \"playfair-display-700-latin.woff2\" && \\\\\ncurl -sL \"https://fonts.gstatic.com/s/playfairdisplay/v40/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgFE_.woff2\" -o \"playfair-display-700-latin-ext.woff2\" && \\\\\necho \"Done\" && ls -lh *.woff2)",
+      "Bash(python3 -c \"\nfrom PIL import Image\nimg = Image.open\\('/c/Users/Saad/Downloads/calmpaw/images/og-homepage.jpg'\\)\nprint\\(img.size\\)\n\" 2>/dev/null || identify /c/Users/Saad/Downloads/calmpaw/images/og-homepage.jpg 2>/dev/null || python -c \"\nimport struct, zlib\nwith open\\('/c/Users/Saad/Downloads/calmpaw/images/og-homepage.jpg','rb'\\) as f:\n    data = f.read\\(\\)\nprint\\('size:', len\\(data\\), 'bytes'\\)\n\")",
+      "Read(//c/Users/Saad/.claude/**)",
+      "Bash(curl -s \"https://random-dog-facts.p.rapidapi.com/\" \\\\\n  -H \"x-rapidapi-host: random-dog-facts.p.rapidapi.com\" \\\\\n  -H \"x-rapidapi-key: d61f48d87dmsh805e5cd0bbe5febp18e13djsnc97d6c0b88e2\"\n\ncurl -s \"https://random-dog-facts.p.rapidapi.com/facts\" \\\\\n  -H \"x-rapidapi-host: random-dog-facts.p.rapidapi.com\" \\\\\n  -H \"x-rapidapi-key: d61f48d87dmsh805e5cd0bbe5febp18e13djsnc97d6c0b88e2\")",
+      "WebFetch(domain:rapidapi.com)",
+      "Bash(ls /c/Users/Saad/Downloads/calmpaw/*.js 2>/dev/null || echo \"No JS files in root\")"
     ]
   }
 }
