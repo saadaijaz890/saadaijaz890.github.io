@@ -334,5 +334,6 @@ const observer = new IntersectionObserver(entries=>{
 },{threshold:.1,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 </script>
+<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js')}</script>
 </body>
 </html>
