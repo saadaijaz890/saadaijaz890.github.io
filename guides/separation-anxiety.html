@@ -66,6 +66,14 @@
     footer ul a{color:rgba(255,255,255,.5);text-decoration:none;font-size:.82rem}
     footer ul a:hover{color:var(--sand)}
     .footer-bottom{background:rgba(0,0,0,.2);padding:1.2rem 5vw;text-align:center;font-size:.75rem;color:rgba(255,255,255,.3)}
+
+    .facts-strip{background:var(--bark);padding:2.5rem 5vw;overflow:hidden}
+    .facts-strip h3{font-family:'Playfair Display',Georgia,serif;font-size:1rem;color:var(--sand);text-transform:uppercase;letter-spacing:.12em;margin-bottom:1.2rem}
+    .facts-scroll{display:flex;gap:1rem;overflow-x:auto;padding-bottom:.5rem;scrollbar-width:thin;scrollbar-color:var(--sand-light) transparent}
+    .facts-scroll::-webkit-scrollbar{height:4px}.facts-scroll::-webkit-scrollbar-thumb{background:var(--sand-light);border-radius:4px}
+    .fact-card{flex-shrink:0;width:260px;background:rgba(255,255,255,.07);border:1px solid rgba(212,169,106,.25);border-radius:16px;padding:1.2rem 1.4rem;display:flex;gap:.8rem;align-items:flex-start}
+    .fact-card .fi{font-size:1.6rem;flex-shrink:0;margin-top:.1rem}
+    .fact-card p{font-size:.84rem;color:rgba(255,255,255,.82);line-height:1.55;margin:0}
     @media(max-width:768px){nav{display:none}footer{grid-template-columns:1fr 1fr}.signs-grid{grid-template-columns:1fr}}
   
     .related-section{background:var(--warm-white);border-top:1px solid var(--sand-light);padding:3rem 5vw;margin-top:2rem}
@@ -142,6 +150,19 @@
   <h2>When to See a Vet</h2>
   <p>If your dog's separation anxiety causes self-injury (breaking teeth on crates, bleeding paws), or doesn't improve after 4–6 weeks of consistent protocol, see a vet or veterinary behaviorist. Prescription medications like fluoxetine (Reconcile) or trazodone are safe, effective, and often used alongside behavioral therapy for severe cases.</p>
 </div>
+
+<section class="facts-strip">
+  <h3>🔬 The Science of Dog Separation Anxiety</h3>
+  <div class="facts-scroll">
+    <div class="fact-card"><span class="fi">📈</span><p><strong style="color:var(--sand-light)">20–40% of dogs</strong> referred to veterinary behaviorists have true separation anxiety — making it the most common behavioral diagnosis.</p></div>
+    <div class="fact-card"><span class="fi">🐺</span><p>Dogs are pack animals — isolation is a <strong style="color:var(--sand-light)">genuine threat signal</strong> in their nervous system, not just stubbornness or bad behavior.</p></div>
+    <div class="fact-card"><span class="fi">⏱️</span><p>A dog's cortisol (stress hormone) can rise to <strong style="color:var(--sand-light)">peak levels within 30 minutes</strong> of an owner leaving — before any barking starts.</p></div>
+    <div class="fact-card"><span class="fi">👃</span><p>Dogs can track the <strong style="color:var(--sand-light)">fading scent of their owner</strong> in the home — many start to anticipate return 15–20 minutes before arrival.</p></div>
+    <div class="fact-card"><span class="fi">🏠</span><p>Rescue dogs are <strong style="color:var(--sand-light)">2–3× more likely</strong> to develop separation anxiety due to prior abandonment and attachment disruption.</p></div>
+    <div class="fact-card"><span class="fi">💊</span><p>Combined behavioral + supplement protocols resolve separation anxiety in <strong style="color:var(--sand-light)">over 70% of cases</strong> within 8 weeks — medication alone is far less effective.</p></div>
+  </div>
+</section>
+
 <div class="related-section">
   <h3>📖 Related Guides</h3>
   <div class="related-grid">

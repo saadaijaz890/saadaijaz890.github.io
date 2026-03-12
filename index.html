@@ -126,6 +126,14 @@
     footer ul a:hover{color:var(--sand)}
     .footer-bottom{background:rgba(0,0,0,.2);padding:1.2rem 5vw;text-align:center;font-size:.75rem;color:rgba(255,255,255,.6)}
     .affiliate-note{background:rgba(212,169,106,.1);border:1px solid rgba(212,169,106,.2);border-radius:8px;padding:1rem 1.5rem;margin-top:3rem;font-size:.75rem;color:rgba(255,255,255,.65);line-height:1.6}
+
+    .facts-strip{background:var(--bark);padding:2.5rem 5vw;overflow:hidden}
+    .facts-strip h3{font-family:'Playfair Display',Georgia,serif;font-size:1rem;color:var(--sand);text-transform:uppercase;letter-spacing:.12em;margin-bottom:1.2rem}
+    .facts-scroll{display:flex;gap:1rem;overflow-x:auto;padding-bottom:.5rem;scrollbar-width:thin;scrollbar-color:var(--sand-light) transparent}
+    .facts-scroll::-webkit-scrollbar{height:4px}.facts-scroll::-webkit-scrollbar-thumb{background:var(--sand-light);border-radius:4px}
+    .fact-card{flex-shrink:0;width:260px;background:rgba(255,255,255,.07);border:1px solid rgba(212,169,106,.25);border-radius:16px;padding:1.2rem 1.4rem;display:flex;gap:.8rem;align-items:flex-start}
+    .fact-card .fi{font-size:1.6rem;flex-shrink:0;margin-top:.1rem}
+    .fact-card p{font-size:.84rem;color:rgba(255,255,255,.82);line-height:1.55;margin:0}
     @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
     @keyframes float{0%,100%{transform:rotate(3deg) translateY(0)}50%{transform:rotate(3deg) translateY(-10px)}}
     .reveal{opacity:0;transform:translateY(20px);transition:opacity .5s ease,transform .5s ease;will-change:opacity,transform}
@@ -202,6 +210,18 @@
   <div class="trust-item"><span class="trust-icon">✅</span> Independently tested</div>
   <div class="trust-item"><span class="trust-icon">💬</span> Trusted by dog owners everywhere</div>
 </div>
+
+<section class="facts-strip">
+  <h3>🐾 Did You Know?</h3>
+  <div class="facts-scroll">
+    <div class="fact-card"><span class="fi">🧠</span><p>Dogs can understand up to <strong style="color:var(--sand-light)">165 words and gestures</strong> — the same cognitive level as a 2-year-old child.</p></div>
+    <div class="fact-card"><span class="fi">👃</span><p>A dog's sense of smell is <strong style="color:var(--sand-light)">100,000× stronger</strong> than ours. They can literally smell your stress hormones.</p></div>
+    <div class="fact-card"><span class="fi">💤</span><p>Dogs dream in REM sleep just like humans — their brain wave patterns during sleep are nearly <strong style="color:var(--sand-light)">identical to ours</strong>.</p></div>
+    <div class="fact-card"><span class="fi">🐾</span><p>A dog's nose print is <strong style="color:var(--sand-light)">as unique as a human fingerprint</strong> — no two dogs have the same pattern.</p></div>
+    <div class="fact-card"><span class="fi">❤️</span><p>A dog's heart beats <strong style="color:var(--sand-light)">60–140 times per minute</strong> depending on size — smaller dogs have faster resting heart rates.</p></div>
+    <div class="fact-card"><span class="fi">🐺</span><p>Dogs curl up to sleep to <strong style="color:var(--sand-light)">protect their vital organs</strong> — a survival instinct inherited from their wolf ancestors.</p></div>
+  </div>
+</section>
 
 <section id="guides">
   <div class="section-header reveal">

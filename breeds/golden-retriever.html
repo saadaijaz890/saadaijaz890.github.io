@@ -66,6 +66,14 @@
     footer ul a{color:rgba(255,255,255,.5);text-decoration:none;font-size:.82rem}footer ul a:hover{color:var(--sand)}
     .footer-bottom{background:rgba(0,0,0,.2);padding:1.2rem 5vw;text-align:center;font-size:.75rem;color:rgba(255,255,255,.6)}
     .affiliate-note{background:rgba(212,169,106,.1);border:1px solid rgba(212,169,106,.2);border-radius:8px;padding:1rem;margin-top:2rem;font-size:.75rem;color:rgba(255,255,255,.65)}
+
+    .facts-strip{background:var(--bark);padding:2.5rem 5vw;overflow:hidden}
+    .facts-strip h3{font-family:'Playfair Display',Georgia,serif;font-size:1rem;color:var(--sand);text-transform:uppercase;letter-spacing:.12em;margin-bottom:1.2rem}
+    .facts-scroll{display:flex;gap:1rem;overflow-x:auto;padding-bottom:.5rem;scrollbar-width:thin;scrollbar-color:var(--sand-light) transparent}
+    .facts-scroll::-webkit-scrollbar{height:4px}.facts-scroll::-webkit-scrollbar-thumb{background:var(--sand-light);border-radius:4px}
+    .fact-card{flex-shrink:0;width:260px;background:rgba(255,255,255,.07);border:1px solid rgba(212,169,106,.25);border-radius:16px;padding:1.2rem 1.4rem;display:flex;gap:.8rem;align-items:flex-start}
+    .fact-card .fi{font-size:1.6rem;flex-shrink:0;margin-top:.1rem}
+    .fact-card p{font-size:.84rem;color:rgba(255,255,255,.82);line-height:1.55;margin:0}
     @media(max-width:768px){nav{display:none}footer{grid-template-columns:1fr 1fr}.breed-facts{grid-template-columns:1fr 1fr}}
     .related-section{background:var(--warm-white);border-top:1px solid var(--sand-light);padding:3rem 5vw;margin-top:2rem}
     .related-section h3{font-family:'Playfair Display',Georgia,serif;font-size:1.5rem;color:var(--bark);margin-bottom:1.5rem}
@@ -187,6 +195,19 @@
     </div>
   </div>
 </section>
+
+<section class="facts-strip">
+  <h3>🦴 Golden Retriever Facts</h3>
+  <div class="facts-scroll">
+    <div class="fact-card"><span class="fi">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span><p>Golden Retrievers were first bred in <strong style="color:var(--sand-light)">Scotland in the 1860s</strong> as waterfowl hunting companions — over 150 years of human bonding.</p></div>
+    <div class="fact-card"><span class="fi">🥚</span><p>A Golden's "soft mouth" is so precise they can <strong style="color:var(--sand-light)">carry a raw egg without cracking it</strong> — a trait bred in for game retrieval.</p></div>
+    <div class="fact-card"><span class="fi">📊</span><p>Up to <strong style="color:var(--sand-light)">40% of Golden Retrievers</strong> develop separation anxiety — one of the highest rates of any breed due to their people-oriented nature.</p></div>
+    <div class="fact-card"><span class="fi">🎗️</span><p>Goldens are the <strong style="color:var(--sand-light)">#1 breed used for therapy and emotional support</strong> roles, outperforming all others in temperament testing.</p></div>
+    <div class="fact-card"><span class="fi">🥇</span><p>Golden Retrievers are the <strong style="color:var(--sand-light)">3rd most popular breed</strong> in the US — consistently ranked for family compatibility since records began.</p></div>
+    <div class="fact-card"><span class="fi">🌡️</span><p>Goldens have a <strong style="color:var(--sand-light)">double coat</strong> that regulates temperature — but anxiety can cause excessive shedding even out of season.</p></div>
+  </div>
+</section>
+
 <div class="related-section">
   <h3>📚 Related Guides</h3>
   <div class="related-grid">
