@@ -3,6 +3,9 @@
 ## Topics Already Written
 <!-- Add entries here as articles are published. Format: -->
 <!-- - [breed-slug]-[article-slug]: [Title] (published YYYY-MM-DD) -->
+- golden-retriever-puppy-crate-anxiety: Golden Retriever Puppy Crate Anxiety: 7-Night Protocol That Actually Works (published ~2026-03)
+- golden-retriever-senior-nighttime-anxiety: Golden Retriever Senior Nighttime Anxiety: CDS Signs & 7-Night Protocol (published ~2026-03)
+- golden-retriever-velcro-dog-protocol: Golden Retriever Velcro Dog: Why They Follow You & How to Build Independence (published ~2026-03)
 
 ## High-Scoring Topic Patterns by Breed
 - golden-retriever: crate anxiety (puppy-specific) scores very high — dozens of dedicated forum threads
@@ -23,11 +26,14 @@
 - Car travel and vet visit anxiety — NOT covered (guides/car-travel-anxiety.html and guides/vet-visit-anxiety.html are cross-breed)
 
 ## Coverage Gaps Confirmed (Golden Retriever)
-- Crate anxiety for Golden Retriever puppies — NOT covered (breed page only mentions "safe space" generically)
-- Senior Golden nighttime anxiety / cognitive dysfunction — NOT a dedicated article (only a warning box in breed page; guides/nighttime-anxiety.html is cross-breed only)
-- Velcro dog / following behavior prevention protocol — NOT a dedicated article (one FAQ line in breed page)
-- Fireworks anxiety for Golden Retrievers — NOT a dedicated article (breed page mentions thunderstorm; guides/noise-phobia.html is cross-breed)
-- Car travel anxiety for Golden Retrievers — NOT a dedicated article (guides/car-travel-anxiety.html is cross-breed)
+- Crate anxiety for Golden Retriever puppies — WRITTEN: golden-retriever-puppy-crate-anxiety
+- Senior Golden nighttime anxiety / cognitive dysfunction — WRITTEN: golden-retriever-senior-nighttime-anxiety
+- Velcro dog / following behavior — WRITTEN: golden-retriever-velcro-dog-protocol
+- Adult separation anxiety step-by-step protocol — NOT covered (breed page has surface tips only; no structured severity-graded treatment plan)
+- "How long can you leave a Golden Retriever alone" — NOT covered; multiple competing pages on this exact query; strong PAA signal
+- Severe separation anxiety + medication pathway (fluoxetine/Reconcile) — NOT covered anywhere on site; justanswer.com has direct hit; strong affiliate (vet consult + supplements stack)
+- Return-to-office / WFH transition protocol — NOT covered; chienmag.com 2025 article confirms ongoing demand; grrmf.org has dedicated page
+- Departure cue desensitization protocol — mentioned once in breed page as concept only; no step-by-step article; high search volume ("pre-departure routine" queries)
 
 ## Coverage Gaps Confirmed (German Shepherd)
 - Leash reactivity / fear-based reactivity deep-dive — WRITTEN: german-shepherd-leash-reactivity-protocol (published)
