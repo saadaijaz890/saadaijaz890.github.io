@@ -30,7 +30,7 @@ Derive the breed slug and dog.ceo API path from this table (from CLAUDE.md):
 | French Bulldog | french-bulldog | bulldog/french |
 | Beagle | beagle | beagle |
 | Dachshund | dachshund | dachshund |
-| Corgi | corgi | corgi |
+| Corgi | corgi | corgi-cardigan |
 | Australian Shepherd | australian-shepherd | sheepdog/australian |
 | Husky | husky | husky |
 | Border Collie | border-collie | collie/border |
