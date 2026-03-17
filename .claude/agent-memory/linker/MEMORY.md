@@ -24,6 +24,12 @@
 - dachshund (2026-03-17)
 
 ## Rotated Homepage Cards
+- 2026-03-18: blogs/border-collie-separation-anxiety-strategies — "Managing Separation Anxiety in Border Collies: Effective Strategies for a Calm Companion"
+- 2026-03-18: blogs/pug-separation-anxiety-strategies — "Managing Separation Anxiety in Pugs: Effective Strategies for a Calm Companion"
+- 2026-03-18: blogs/chihuahua-separation-anxiety-strategies — "Managing Separation Anxiety in Chihuahuas: Effective Strategies for a Calm Pup"
+- 2026-03-18: blogs/australian-shepherd-separation-anxiety-protocol — "Australian Shepherd Separation Anxiety: Step-by-Step Protocol for 2026"
+- 2026-03-18: blogs/cavalier-king-charles-spaniel-puppy-crate-training — "Cavalier King Charles Spaniel Puppy Crate Training: Preventing Anxiety from Day One"
+- 2026-03-18: blogs/weimaraner-puppy-crate-training — "Weimaraner Puppy Crate Training: Preventing Anxiety from Day One"
 - 2026-03-18: blogs/doberman-puppy-crate-training — "Doberman Puppy Crate Training: Step-by-Step Guide to Prevent Anxiety"
 - 2026-03-18: blogs/pitbull-puppy-crate-training — "Pitbull Puppy Crate Training: Step-by-Step Guide to Prevent Anxiety"
 - 2026-03-18: blogs/yorkshire-terrier-puppy-crate-training — "Yorkshire Terrier Puppy Crate Training: Step-by-Step Guide to Prevent Anxiety"
