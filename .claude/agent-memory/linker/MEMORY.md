@@ -24,6 +24,8 @@
 - dachshund (2026-03-17)
 
 ## Rotated Homepage Cards
+- 2026-03-18: blogs/doberman-puppy-crate-training — "Doberman Puppy Crate Training: Step-by-Step Guide to Prevent Anxiety"
+- 2026-03-18: blogs/pitbull-puppy-crate-training — "Pitbull Puppy Crate Training: Step-by-Step Guide to Prevent Anxiety"
 - 2026-03-18: blogs/yorkshire-terrier-puppy-crate-training — "Yorkshire Terrier Puppy Crate Training: Step-by-Step Guide to Prevent Anxiety"
 - 2026-03-18: blogs/border-collie-puppy-crate-training — "Border Collie Puppy Crate Training: Step-by-Step Guide to Prevent Anxiety"
 - 2026-03-18: blogs/pug-puppy-crate-training — "Pug Puppy Crate Training: Step-by-Step Guide to Prevent Anxiety"
