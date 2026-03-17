@@ -3,25 +3,6 @@
 ## Topics Already Written
 <!-- Add entries here as articles are published. Format: -->
 <!-- - [breed-slug]-[article-slug]: [Title] (published YYYY-MM-DD) -->
-- golden-retriever-puppy-crate-anxiety: Golden Retriever Puppy Crate Anxiety: 7-Night Protocol That Actually Works (published ~2026-03)
-- golden-retriever-senior-nighttime-anxiety: Golden Retriever Senior Nighttime Anxiety: CDS Signs & 7-Night Protocol (published ~2026-03)
-- golden-retriever-velcro-dog-protocol: Golden Retriever Velcro Dog: Why They Follow You & How to Build Independence (published ~2026-03)
-
-## High-Scoring Topic Patterns by Breed
-- golden-retriever: crate anxiety (puppy-specific) scores very high — dozens of dedicated forum threads
-- golden-retriever: senior CDS / nighttime anxiety scores very high — breed page only has a warning box
-- golden-retriever: velcro behavior / following everywhere → separation anxiety prevention has strong PAA signal
-- labrador-retriever: puppy crate training scores highest (15/15) — thelabradorforum.com has dedicated threads; breed page has zero crate content
-- labrador-retriever: senior nighttime anxiety / CDS scores 13 — labradortraininghq.com has exact-match article; breed page has zero senior content
-- labrador-retriever: thunderstorm/fireworks scores 13 — high affiliate potential (Sileo, Adaptil, Thundershirt); breed page has zero noise phobia content
-
-## Seasonal Demand Patterns
-- June/July: fireworks anxiety spikes across all breeds (research signal confirmed March 2026 session)
-
-## Coverage Gaps Confirmed (Labrador Retriever)
-- Puppy crate training / nighttime crying — NOT covered (breed page has zero crate content)
-- Senior nighttime anxiety / cognitive dysfunction (sundowners) — NOT covered (breed page has zero senior content)
-- Thunderstorm and fireworks anxiety — NOT covered (breed page has zero noise phobia content; guides/noise-phobia.html is cross-breed)
 - Velcro / clingy behavior prevention protocol — NOT a dedicated article (symptom listed once in breed page)
 - Car travel and vet visit anxiety — NOT covered (guides/car-travel-anxiety.html and guides/vet-visit-anxiety.html are cross-breed)
 
@@ -111,8 +92,104 @@
 - guides/noise-phobia.html
 - guides/enrichment-for-anxiety.html
 
+## Coverage Gaps Confirmed (Beagle)
+- Puppy crate training / nighttime crying — NOT covered (breed page has zero crate content; wagwalking.com and ourbeagleworld.com have dedicated articles/threads confirming demand)
+- Thunderstorm / fireworks noise phobia — NOT a dedicated article (breed page has one brief paragraph only; guides/noise-phobia.html is cross-breed)
+- Apartment howling / neighbor management — NOT covered (breed page does not address apartment context; positively.com forum thread "LOUD LONELY BEAGLE WITH SEPARATION ANXIETY" confirms this distinct pain point)
+- Departure cue desensitization step-by-step protocol — NOT covered (breed page has one-paragraph mention; beaglepro.com and thebarmybeagle.com have dedicated articles)
+- How long can you leave a Beagle alone — NOT covered (beaglepro.com, hepper.com, tryfi.com, dogster.com all have dedicated articles confirming strong search demand)
+
+## High-Scoring Topic Patterns by Breed (continued)
+- beagle: puppy crate training scores 15 — wagwalking.com/preventivevet confirm demand; breed page has zero crate content; strong affiliate (crate, KONG, calming chews, crate cover); top pick
+- beagle: how long can you leave a beagle alone scores 14 — 8+ competing articles; breed page has zero time-guideline content; affiliate (Adaptil, calming supplements, GPS collar, cam)
+- beagle: departure cue desensitization scores 13 — beaglepro.com + thebarmybeagle.com dedicated articles; breed page has one paragraph only
+- beagle: apartment howling / neighbor management scores 13 — unique angle; zero coverage on site; strong affiliate (white noise, Adaptil, supplements)
+- beagle: thunderstorm/fireworks scores 13 — seasonal spike (June/July); theblissfuldog.com has Beagle-specific product page; breed page has one sentence only
+
 ## Thundershirt Content Audit (March 2026)
 - guides/thundershirt-review.html covers: does it work, sizing table, how to put it on, fit/tightness, wear duration, side effects, separation anxiety, troubleshooting
 - NOT covered anywhere on site: Thundershirt alternatives comparison, Thundershirt vs calming chews stack guide, fireworks-specific event protocol, breed-specific fit guide for large breeds, DIY anxiety wrap
 - High-scoring cross-guide topics: alternatives comparison (15), vs calming chews (14), fireworks protocol (13)
 - Seasonal note: fireworks/July 4th protocol is a top Thundershirt query — publish by June
+
+## Coverage Gaps Confirmed (Dachshund)
+- Puppy crate training / nighttime howling — NOT covered (breed page has zero crate content; wagwalking, dogster, kellyinthecity, dachshund-talk forum, Quora thread all confirm demand)
+- How long can you leave a Dachshund alone — NOT covered (6+ competing articles on exact query; breed page never mentions time limits; strong affiliate for Adaptil, calming supplements, dog cam)
+- IVDD recovery confinement anxiety — NOT covered (perfectlypolitedachshunds.com has dedicated article on behavioral aftermath; breed page has warning box only; completely unique Dachshund angle)
+- Departure cue desensitization step-by-step — NOT a dedicated article (breed page says "desensitization works" in one sentence; dachshundfriends.com, dachshundstation.com, dachshundspace.com all have dedicated step-by-step articles)
+- Scent work / nose work as anxiety management protocol — NOT a dedicated article (one paragraph in breed page; strong affiliate: snuffle mats, K9 Nose Work kits; AKC confirms scent work helps anxious dogs)
+
+## High-Scoring Topic Patterns by Breed (continued)
+- dachshund: puppy crate training scores 15 — multiple dedicated Dachshund community articles; breed page has zero crate content; strong affiliate (heavy-duty crate, calming chews, KONG, cave bed)
+- dachshund: how long to leave alone scores 14 — 6+ competing articles on exact-match query; breed page has zero time-limit content; moderate affiliate (dog cam, Adaptil, calming supplements)
+- dachshund: IVDD confinement anxiety scores 13 — unique breed-only angle; perfectlypolitedachshunds.com has dedicated post; zero coverage on site beyond warning box
+
+## Coverage Gaps Confirmed (Australian Shepherd)
+- How long can you leave an Australian Shepherd alone — NOT covered (breed page never mentions time limits; spiritdogtraining.com, dogster.com, hepper.com, thepuppymag.com, tryfi.com, aussiebase.com all have dedicated articles confirming strong search demand)
+- Puppy crate training / nighttime crying — NOT covered (breed page has zero crate content; juniperpets.com has Aussie-specific 6-step guide; justanswer.com has direct Q&A)
+- Aussie-specific separation anxiety step-by-step protocol — NOT a dedicated article (breed page has one paragraph pointing to generic guide; aussieuniversity.com + tailster.com have dedicated articles)
+- Fear of strangers / socialization anxiety — NOT covered (breed page has zero stranger-fear content; doggoneproblems.com, dogbizness.com.au, Quora all have dedicated Aussie-specific content)
+- Mini Aussie / Miniature Australian Shepherd anxiety — NOT covered (breed page has zero coverage of Mini variant; the-pup-md.myshopify.com, doggoneproblems.com, spiritdogtraining.com have Mini-specific content)
+
+## High-Scoring Topic Patterns by Breed (continued)
+- australian-shepherd: how long to leave alone scores 14 — 6+ competing articles on exact-match query; breed page has zero time-limit content; strong affiliate (dog cam, Adaptil, GPS collar, calming supplements)
+- australian-shepherd: puppy crate training scores 14 — juniperpets.com Aussie-specific guide; breed page has zero crate content; strong affiliate (heavy-duty crate, KONG, calming chews, heartbeat toy)
+- australian-shepherd: separation anxiety step-by-step scores 13 — aussieuniversity.com + tailster.com have dedicated articles; breed page points to generic guide only; guides/separation-anxiety.html is generic
+- australian-shepherd: mini aussie anxiety scores 13 — distinct audience; multiple dedicated articles; breed page has zero Mini variant content
+- australian-shepherd: fear of strangers / socialization anxiety scores 12 — doggoneproblems.com + dogbizness.com.au have dedicated content; breed page has zero socialization content
+
+## Coverage Gaps Confirmed (Chihuahua)
+- Chihuahua Puppy Crate Training: Step-by-Step Guide to Prevent Anxiety — slug: `chihuahua-puppy-crate-training`, score: 15/15
+- Managing Separation Anxiety in Chihuahuas: Effective Strategies for a Calm Pup — slug: `chihuahua-separation-anxiety-strategies`, score: 15/15
+- Thunderstorm and Fireworks Anxiety in Chihuahuas: How to Keep Your Dog Calm — slug: `chihuahua-noise-anxiety-solutions`, score: 15/15
+- Socializing Your Chihuahua: Preventing Fear and Anxiety Around Strangers — slug: `chihuahua-socialization-tips`, score: 13/15
+- Understanding and Managing Clingy Behavior in Chihuahuas: Fostering Independence — slug: `chihuahua-clingy-behavior-solutions`, score: 13/15
+
+## Coverage Gaps Confirmed (Pug)
+- Pug Puppy Crate Training: Step-by-Step Guide to Prevent Anxiety — slug: `pug-puppy-crate-training`, score: 15/15
+- Managing Separation Anxiety in Pugs: Effective Strategies for a Calm Companion — slug: `pug-separation-anxiety-strategies`, score: 15/15
+- Thunderstorm and Fireworks Anxiety in Pugs: How to Keep Your Dog Calm — slug: `pug-noise-anxiety-solutions`, score: 15/15
+- Socializing Your Pug: Preventing Fear and Anxiety Around Strangers — slug: `pug-socialization-tips`, score: 13/15
+- Understanding and Managing Clingy Behavior in Pugs: Fostering Independence — slug: `pug-clingy-behavior-solutions`, score: 13/15
+
+## Coverage Gaps Confirmed (Border Collie)
+- Border Collie Puppy Crate Training: Step-by-Step Guide to Prevent Anxiety — slug: `border-collie-puppy-crate-training`, score: 15/15
+- Managing Separation Anxiety in Border Collies: Effective Strategies for a Calm Companion — slug: `border-collie-separation-anxiety-strategies`, score: 15/15
+- Thunderstorm and Fireworks Anxiety in Border Collies: How to Keep Your Dog Calm — slug: `border-collie-noise-anxiety-solutions`, score: 15/15
+- Socializing Your Border Collie: Preventing Fear and Anxiety Around Strangers — slug: `border-collie-socialization-tips`, score: 13/15
+- Understanding and Managing Clingy Behavior in Border Collies: Fostering Independence — slug: `border-collie-clingy-behavior-solutions`, score: 13/15
+
+## Coverage Gaps Confirmed (Yorkshire Terrier)
+- Yorkshire Terrier Puppy Crate Training: Step-by-Step Guide to Prevent Anxiety — slug: `yorkshire-terrier-puppy-crate-training`, score: 15/15
+- Managing Separation Anxiety in Yorkshire Terriers: Effective Strategies for a Calm Companion — slug: `yorkshire-terrier-separation-anxiety-strategies`, score: 15/15
+- Thunderstorm and Fireworks Anxiety in Yorkshire Terriers: How to Keep Your Dog Calm — slug: `yorkshire-terrier-noise-anxiety-solutions`, score: 15/15
+- Socializing Your Yorkshire Terrier: Preventing Fear and Anxiety Around Strangers — slug: `yorkshire-terrier-socialization-tips`, score: 13/15
+- Understanding and Managing Clingy Behavior in Yorkshire Terriers: Fostering Independence — slug: `yorkshire-terrier-clingy-behavior-solutions`, score: 13/15
+
+## Coverage Gaps Confirmed (Pitbull)
+- Pitbull Puppy Crate Training: Step-by-Step Guide to Prevent Anxiety — slug: `pitbull-puppy-crate-training`, score: 15/15
+- Managing Separation Anxiety in Pitbulls: Effective Strategies for a Calm Companion — slug: `pitbull-separation-anxiety-strategies`, score: 15/15
+- Thunderstorm and Fireworks Anxiety in Pitbulls: How to Keep Your Dog Calm — slug: `pitbull-noise-anxiety-solutions`, score: 15/15
+- Socializing Your Pitbull: Preventing Fear and Anxiety Around Strangers — slug: `pitbull-socialization-tips`, score: 13/15
+- Understanding and Managing Clingy Behavior in Pitbulls: Fostering Independence — slug: `pitbull-clingy-behavior-solutions`, score: 13/15
+
+## Coverage Gaps Confirmed (Doberman)
+- Doberman Puppy Crate Training: Step-by-Step Guide to Prevent Anxiety — slug: `doberman-puppy-crate-training`, score: 15/15
+- Managing Separation Anxiety in Dobermans: Effective Strategies for a Calm Companion — slug: `doberman-separation-anxiety-strategies`, score: 15/15
+- Thunderstorm and Fireworks Anxiety in Dobermans: How to Keep Your Dog Calm — slug: `doberman-noise-anxiety-solutions`, score: 15/15
+- Socializing Your Doberman: Preventing Fear and Anxiety Around Strangers — slug: `doberman-socialization-tips`, score: 13/15
+- Understanding and Managing Clingy Behavior in Dobermans: Fostering Independence — slug: `doberman-clingy-behavior-solutions`, score: 13/15
+
+## Coverage Gaps Confirmed (Weimaraner)
+- Weimaraner Puppy Crate Training: Preventing Anxiety from Day One — slug: `weimaraner-puppy-crate-training`, score: 15/15
+- Managing Thunderstorm and Fireworks Anxiety in Weimaraners — slug: `weimaraner-noise-anxiety-solutions`, score: 15/15
+- How Long Can You Leave a Weimaraner Alone? — slug: `weimaraner-alone-time-guidelines`, score: 15/15
+- Socializing Your Weimaraner: Preventing Fear and Anxiety Around Strangers — slug: `weimaraner-socialization-tips`, score: 13/15
+- Understanding and Managing Clingy Behavior in Weimaraners: Fostering Independence — slug: `weimaraner-clingy-behavior-solutions`, score: 13/15
+
+## Coverage Gaps Confirmed (Cavalier King Charles Spaniel)
+- Cavalier King Charles Spaniel Puppy Crate Training: Preventing Anxiety from Day One — slug: `cavalier-king-charles-spaniel-puppy-crate-training`, score: 15/15
+- Managing Separation Anxiety in Cavalier King Charles Spaniels: Effective Strategies for a Calm Companion — slug: `cavalier-king-charles-spaniel-separation-anxiety-strategies`, score: 15/15
+- Thunderstorm and Fireworks Anxiety in Cavalier King Charles Spaniels: How to Keep Your Dog Calm — slug: `cavalier-king-charles-spaniel-noise-anxiety-solutions`, score: 15/15
+- Socializing Your Cavalier King Charles Spaniel: Preventing Fear and Anxiety Around Strangers — slug: `cavalier-king-charles-spaniel-socialization-tips`, score: 13/15
+- Understanding and Managing Clingy Behavior in Cavalier King Charles Spaniels: Fostering Independence — slug: `cavalier-king-charles-spaniel-clingy-behavior-solutions`, score: 13/15

@@ -103,7 +103,7 @@ def build_system_prompt():
 3. Every affiliate link MUST include: rel="noopener noreferrer nofollow sponsored" and target="_blank"
 4. Affiliate links format: https://www.amazon.com/s?k=[search+terms]&tag=anxietyfree-20 OR https://www.chewy.com/s?query=[terms]
 5. Include ALL 3 required JSON-LD schemas: Article, BreadcrumbList, FAQPage
-6. Write 900–1,300 words of body copy (not counting HTML/CSS boilerplate)
+6. Write 1,500–2,000 words of body copy (not counting HTML/CSS boilerplate) — use 5-6 H2 sections, each with 2-3 detailed paragraphs
 7. Every paragraph must reference the specific breed — no generic "your dog" advice
 
 ## EXACT CSS TO USE
@@ -406,7 +406,7 @@ def main():
                 {"role": "user", "content": user_prompt},
             ],
             temperature=0.7,
-            max_tokens=4096,
+            max_tokens=12000,
         )
     except Exception as e:
         print(f"ERROR calling OpenAI API: {e}", file=sys.stderr)
