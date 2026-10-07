@@ -106,7 +106,7 @@
   <div class="meta"><span>Vet-reviewed</span><span>Updated March 2026</span><span>9 min read</span></div>
 </section>
 <script>
-fetch('https://dog.ceo/api/breed/retriever-golden/images/random')
+fetch('https://dog.ceo/api/breed/retriever/golden/images/random')
   .then(r=>r.json()).then(d=>{if(d.status==='success'){document.getElementById('breed-hero').src=d.message}})
   .catch(()=>{});
 </script>

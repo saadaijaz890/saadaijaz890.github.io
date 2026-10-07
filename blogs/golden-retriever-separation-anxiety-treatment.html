@@ -205,7 +205,7 @@
 </section>
 
 <script>
-fetch('https://dog.ceo/api/breed/retriever-golden/images/random')
+fetch('https://dog.ceo/api/breed/retriever/golden/images/random')
   .then(r=>r.json()).then(d=>{if(d.status==='success'){document.getElementById('breed-hero').src=d.message}})
   .catch(()=>{});
 </script>
