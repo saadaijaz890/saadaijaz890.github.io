@@ -23,7 +23,7 @@
 - VetriScience Composure Chews (Amazon) — vet visits, car travel, grooming
 - Adaptil Spray (Amazon) — vet visits, car travel, grooming
 - Thundershirt (Amazon) — vet visits, noise phobia
-- Zylkene (Chewy) — vet visits, grooming
+- Zylkene (Amazon) — vet visits, grooming
 - Sleepypod Clickit Sport harness (Amazon) — car travel
 - Kong Classic (Amazon) — rescue dog, enrichment
 - Midwest iCrate (Amazon) — rescue dog
@@ -33,7 +33,7 @@
 - Paw5 Snuffle Mat (Amazon) — enrichment
 - Nina Ottosson Dog Tornado puzzle (Amazon) — enrichment
 - LickiMat Classic Buddy (Amazon) — enrichment
-- Himalayan Yak Chews (Chewy) — enrichment
+- Himalayan Yak Chews (Amazon) — enrichment
 
 ## Git Push Notes
 - Remote divergence happened once during session (Article 3). Fixed with: git stash, git pull --rebase, git stash pop, git push

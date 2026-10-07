@@ -64,7 +64,7 @@ sitemap.xml              ← updated on every publish
 
 ## Affiliate Rules
 
-- Amazon Associates + Chewy affiliate links
+- Amazon Associates links only, always with `tag=anxietyfreepu-20` (no Chewy or other retailers)
 - All affiliate links: `rel="noopener noreferrer nofollow sponsored"`
 - Disclosure in every page footer + link to `resources/affiliate-disclosure.html`
 

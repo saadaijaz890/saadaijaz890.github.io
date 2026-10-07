@@ -101,7 +101,7 @@ def build_system_prompt():
 1. Output ONLY valid HTML. No markdown code fences, no explanations, no commentary. The raw output is saved directly as an .html file.
 2. Use ONLY the CSS classes listed below — do NOT invent new class names.
 3. Every affiliate link MUST include: rel="noopener noreferrer nofollow sponsored" and target="_blank"
-4. Affiliate links format: https://www.amazon.com/s?k=[search+terms]&tag=anxietyfree-20 OR https://www.chewy.com/s?query=[terms]
+4. Affiliate links format: https://www.amazon.com/s?k=[search+terms]&tag=anxietyfreepu-20 (Amazon ONLY, always with tag=anxietyfreepu-20; never link to Chewy or any other retailer)
 5. Include ALL 3 required JSON-LD schemas: Article, BreadcrumbList, FAQPage
 6. Write 1,500–2,000 words of body copy (not counting HTML/CSS boilerplate) — use 5-6 H2 sections, each with 2-3 detailed paragraphs
 7. Every paragraph must reference the specific breed — no generic "your dog" advice
@@ -238,7 +238,7 @@ FAQPage: Build from the actual FAQ items in the HTML. Minimum 3 Q&A pairs.
   <div>
     <h4>[Product Name]</h4>
     <p>[1-line breed-specific benefit]</p>
-    <a href="https://www.amazon.com/s?k=[search+terms]&tag=anxietyfree-20" target="_blank" rel="noopener noreferrer nofollow sponsored">View on Amazon →</a>
+    <a href="https://www.amazon.com/s?k=[search+terms]&tag=anxietyfreepu-20" target="_blank" rel="noopener noreferrer nofollow sponsored">View on Amazon →</a>
   </div>
 </div>
 ```
