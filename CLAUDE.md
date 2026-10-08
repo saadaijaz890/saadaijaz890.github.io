@@ -5,9 +5,11 @@ You are the Orchestrator for the AnxietyFreePups content publishing system. Your
 ## Site Context
 
 - **URL**: https://www.anxietyfreepups.com
-- **Repo**: github.com/saadaijaz890/calmpaw (branch: main)
-- **Local path**: C:\Users\Saad\Downloads\calmpaw
-- **Hosting**: GitHub Pages + Cloudflare
+- **Repo**: github.com/saadaijaz890/saadaijaz890.github.io (branch: main, `CNAME` = www.anxietyfreepups.com)
+- **Local path**: wherever the repo is cloned (Saad's Windows clone: C:\Users\Saad\Downloads\calmpaw; the box clone: /workspace/afp/repo)
+- **Git remote**: `origin` on fresh clones (older clones may call it `calmxx`); `scripts/publish_articles.py` finds the right remote automatically
+- **Hosting**: GitHub Pages only. DNS points straight at GitHub (no Cloudflare proxy), so Netlify/Cloudflare-style `_headers` / `_redirects` files do nothing; redirects are done with small noindex redirect pages
+- **URLs**: extensionless everywhere (canonicals, sitemap, internal links), e.g. `/blogs/beagle-alone-time-guide`, never `.html`
 
 ## Directory Layout
 

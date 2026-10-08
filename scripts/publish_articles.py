@@ -5,8 +5,9 @@ publish_articles.py — Stages specific files, commits, and pushes to remote.
 Usage:
     python3 scripts/publish_articles.py \
         --files blogs/beagle-puppy-crate-training.html breeds/beagle.html index.html sitemap.xml \
-        --message "Add Beagle articles: 5 deep-dive guides" \
-        --remote calmxx
+        --message "Add Beagle articles: 5 deep-dive guides"
+    (--remote is optional; by default the remote pointing at
+     saadaijaz890/saadaijaz890.github.io is used, e.g. `origin` or `calmxx`)
 
 Safety:
   - Never stages .claude/settings.local.json
@@ -46,15 +47,31 @@ def run(cmd, check=True, capture=False):
     return result
 
 
+def detect_remote():
+    """Return the remote that points at the site repo, falling back to 'origin'."""
+    result = run("git remote -v", capture=True, check=False)
+    for line in (result.stdout or "").splitlines():
+        parts = line.split()
+        if len(parts) >= 2 and "saadaijaz890/saadaijaz890.github.io" in parts[1]:
+            return parts[0]
+    return "origin"
+
+
 def main():
     parser = argparse.ArgumentParser(description="Git stage, commit, push for AnxietyFreePups")
     parser.add_argument("--files", nargs="+", required=True, help="Files to stage and commit")
     parser.add_argument("--message", required=True, help="Commit message")
-    parser.add_argument("--remote", default="calmxx", help="Git remote name (default: calmxx)")
+    parser.add_argument("--remote", default=None,
+                        help="Git remote name (default: the remote pointing at saadaijaz890.github.io, else 'origin')")
     parser.add_argument("--branch", default="main", help="Branch to push (default: main)")
     args = parser.parse_args()
 
     os.chdir(REPO_ROOT)
+
+    # ── Resolve remote (fresh clones use `origin`, older ones `calmxx`) ─────
+    if not args.remote:
+        args.remote = detect_remote()
+    print(f"  Remote: {args.remote}", file=sys.stderr)
 
     # ── Safety: unstage excluded files ───────────────────────────────────────
     for excluded in EXCLUDED_FILES:
