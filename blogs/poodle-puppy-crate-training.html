@@ -16,9 +16,14 @@
   <meta name="twitter:title" content="Poodle Puppy Crate Training: Stop Nighttime Crying"/>
   <meta name="twitter:description" content="Poodle puppy crying in the crate at night? A 5-step plan for Toy, Miniature and Standard Poodles, with a night 1–7 schedule and products that help."/>
   <meta name="twitter:image" content="https://images.dog.ceo/breeds/poodle-standard/n02113799_2292.jpg"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"></noscript>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/playfair-display-700-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/dm-sans-400-latin.woff2" crossorigin>
+  <style>
+    @font-face{font-family:'DM Sans';font-style:normal;font-weight:400 500;font-display:swap;src:url('/fonts/dm-sans-400-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+    @font-face{font-family:'DM Sans';font-style:normal;font-weight:400 500;font-display:swap;src:url('/fonts/dm-sans-400-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+    @font-face{font-family:'Playfair Display';font-style:normal;font-weight:700 900;font-display:swap;src:url('/fonts/playfair-display-700-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+    @font-face{font-family:'Playfair Display';font-style:normal;font-weight:700 900;font-display:swap;src:url('/fonts/playfair-display-700-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  </style>
   <style>
     :root{--cream:#FBF5E8;--warm-white:#FFFCF0;--bark:#1C0F04;--bark-light:#5A3818;--moss:#3A6230;--moss-light:#62A050;--sand:#C88A14;--sand-light:#F0C96A;--text:#1A0E04;--text-muted:#6B4E30;--shadow:0 4px 32px rgba(28,15,4,.10)}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -130,7 +135,7 @@
 
 <section class="hero-article">
   <span class="article-tag">BREED DEEP-DIVE</span>
-  <img id="breed-hero" class="breed-hero-img" src="" alt="Poodle puppy" loading="lazy">
+  <img id="breed-hero" class="breed-hero-img" src="/images/heroes/poodle-standard-n02113799-2292.webp" alt="Poodle puppy" width="120" height="120" decoding="async">
   <h1>Poodle Puppy Crate Training: 5-Step Protocol to Stop Nighttime Crying</h1>
   <p class="lead">Poodles are the second most intelligent dog breed — and that intelligence makes crate refusal feel personal. It is not. Almost every Poodle puppy who screams through the night is experiencing a training gap, not a temperament problem. Here is the step-by-step protocol that closes it.</p>
   <div class="meta"><span>Vet-reviewed</span><span>Updated March 2026</span><span>10 min read</span></div>
@@ -449,10 +454,5 @@
   <a href="../#products" class="mob-cta" onclick="document.getElementById('mobileNav').classList.remove('open');document.getElementById('menuToggle').classList.remove('open')">Shop Now</a>
 </div>
 
-<script>
-fetch('https://dog.ceo/api/breed/poodle/images/random')
-  .then(r=>r.json()).then(d=>{if(d.status==='success'){document.getElementById('breed-hero').src=d.message}})
-  .catch(()=>{});
-</script>
 </body>
 </html>
