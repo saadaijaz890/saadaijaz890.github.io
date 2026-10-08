@@ -125,7 +125,7 @@ __CSS_BLOCK__
 ## EXACT FOOTER HTML (reproduce verbatim)
 ```
 <footer>
-  <div><a href="/" class="logo">AnxietyFree<span style="color:var(--sand)">Pups</span></a><p>Helping anxious dogs find calm since 2024. All recommendations independently researched.</p><div class="affiliate-note">⚠️ <strong>Affiliate Disclosure:</strong> We earn commissions from qualifying purchases at no extra cost to you. <a href="/resources/affiliate-disclosure" style="color:rgba(255,255,255,.7)">Full disclosure</a></div></div>
+  <div><a href="/" class="logo">AnxietyFree<span style="color:var(--sand)">Pups</span></a><p>Helping anxious dogs find calm. All recommendations independently researched.</p><div class="affiliate-note">⚠️ <strong>Affiliate Disclosure:</strong> We earn commissions from qualifying purchases at no extra cost to you. <a href="/resources/affiliate-disclosure" style="color:rgba(255,255,255,.7)">Full disclosure</a></div></div>
   <div><h4>Top Guides</h4><ul><li><a href="/guides/calming-chews">Calming Chews</a></li><li><a href="/guides/thundershirt-review">Thundershirt Review</a></li><li><a href="/guides/separation-anxiety">Separation Anxiety</a></li><li><a href="/guides/nighttime-anxiety">Nighttime Anxiety</a></li></ul></div>
   <div><h4>By Breed</h4><ul><li><a href="/breeds/pug">Pug</a></li><li><a href="/breeds/corgi">Corgi</a></li><li><a href="/breeds/chihuahua">Chihuahua</a></li><li><a href="/breeds/golden-retriever">Golden Retriever</a></li><li><a href="/breeds/border-collie">Border Collie</a></li></ul></div>
   <div><h4>Resources</h4><ul><li><a href="/resources/about">About</a></li><li><a href="/resources/affiliate-disclosure">Affiliate Disclosure</a></li><li><a href="/resources/contact">Contact</a></li></ul></div>
