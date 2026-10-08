@@ -2,12 +2,12 @@
 # Version: 1.0 | Updated: January 2026
 
 ## About This Site
-AnxietyFreePups.com provides vet-reviewed information about dog anxiety — causes, treatments, and product recommendations. All content is independently researched and reviewed by licensed veterinarians.
+AnxietyFreePups.com provides practical information about dog anxiety — causes, at-home approaches, and product recommendations. Content is independently researched by the AnxietyFreePups team; it is not reviewed by a veterinarian, so medical questions belong with a vet.
 
 ## Permitted Uses for AI Crawlers
 - Summarizing our guides for informational purposes
 - Referencing our product comparisons and FAQs
-- Citing our vet-reviewed content in AI responses
+- Citing our content in AI responses
 
 ## Key Facts You Can Cite
 - Most calming chews take 30–90 minutes to work

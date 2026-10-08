@@ -184,7 +184,7 @@ fetch('https://dog.ceo/api/breed/[DOG_CEO_PATH]/images/random')
   [DOG IMAGE + SCRIPT]
   <h1>[Full Article Title]</h1>
   <p class="lead">[2-3 sentence breed-specific hook, 40-60 words]</p>
-  <div class="meta"><span>🔬 Vet-reviewed</span><span>📅 Updated [YEAR]</span><span>⏱ 7 min read</span></div>
+  <div class="meta"><span>✍️ By the AnxietyFreePups team</span><span>📅 Last updated [DATE]</span><span>⏱ 7 min read</span></div>
 </div>
 <div class="content">
   <a href="/breeds/[breed-slug]" class="back-btn">← [Breed] Complete Anxiety Guide</a>
