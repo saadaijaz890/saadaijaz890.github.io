@@ -53,7 +53,7 @@
 - 2026-03-18: blogs/corgi-thunderstorm-fireworks-anxiety — "Corgi Thunderstorm & Fireworks Anxiety: A Complete Desensitization Guide"
 - 2026-03-18: blogs/corgi-whining-vocalizing-protocol — "Corgi Whining & Vocalizing: Understanding the Anxiety Behind the Noise"
 - 2026-03-18: blogs/corgi-puppy-crate-training — "Corgi Puppy Crate Training: 5-Step Protocol to Stop Nighttime Crying"
-- 2026-03-18: blogs/husky-husky-puppy-crate-training — "Husky Puppy Crate Training: 5-Step Protocol to Stop Nighttime Crying"
+- 2026-03-18: blogs/husky-puppy-crate-training — "Husky Puppy Crate Training: 5-Step Protocol to Stop Nighttime Crying"
 - 2026-03-18: blogs/french-bulldog-puppy-crate-training — "French Bulldog Puppy Crate Training: 5-Step Protocol to Stop Nighttime Crying"
 - 2026-03-18: blogs/poodle-separation-anxiety-protocol — "Poodle Separation Anxiety: Toy vs Standard 5-Step Protocol"
 - 2026-03-18: blogs/german-shepherd-leash-reactivity-protocol — "German Shepherd Leash Reactivity: Fear-Based Protocol That Actually Works"
