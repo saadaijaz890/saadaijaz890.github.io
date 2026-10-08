@@ -1,0 +1,63 @@
+/* AnxietyFreePups article kit (task 17, Oct 2026).
+   Shared blocks for blogs, guides and breed hubs. Pages keep their own inline CSS;
+   this file only adds the new blocks. Uses the site's :root colour variables. */
+
+/* Phone menu sits below the 64px header so the hamburger stays visible and can close it */
+.mobile-menu{top:64px!important;padding-top:1rem!important}
+
+/* Quick answer: first thing under the H1 */
+.quick-answer{box-sizing:border-box;max-width:calc(760px - 10vw);margin:1.5rem auto 0;background:var(--warm-white,#FFFEF9);border:1px solid var(--sand-light,#EDD9B0);border-left:5px solid var(--moss,#3D5A3E);border-radius:0 16px 16px 0;padding:1.2rem 1.5rem;box-shadow:var(--shadow,0 4px 32px rgba(44,26,14,.10))}
+.quick-answer .qa-label{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--moss,#3D5A3E);margin-bottom:.4rem}
+.quick-answer p{margin:0 0 .6rem;font-size:1.02rem;line-height:1.65;color:var(--text,#1A1208)}
+.quick-answer ul{margin:.2rem 0 .2rem 1.1rem;padding:0}
+.quick-answer li{margin:.25rem 0;line-height:1.55}
+.quick-answer p:last-child,.quick-answer ul:last-child{margin-bottom:0}
+
+/* Table of contents (pages with 4+ H2s) */
+.toc{background:rgba(212,169,106,.10);border:1px solid var(--sand-light,#EDD9B0);border-radius:14px;padding:1rem 1.3rem;margin:0 0 2rem}
+.toc summary{cursor:pointer;font-weight:700;color:var(--bark,#2C1A0E);list-style:none}
+.toc summary::-webkit-details-marker{display:none}
+.toc summary::after{content:" \25BE";color:var(--text-muted,#6B5A4A)}
+.toc[open] summary::after{content:" \25B4"}
+.toc ol{margin:.7rem 0 0 1.2rem;padding:0}
+.toc li{margin:.35rem 0;line-height:1.45}
+.toc a{color:var(--moss,#3D5A3E);text-decoration:none}
+.toc a:hover{text-decoration:underline}
+.content h2[id]{scroll-margin-top:80px}
+
+/* Top product box (our pick) with Amazon button */
+.product-box{display:flex;gap:1.2rem;align-items:center;background:var(--warm-white,#FFFEF9);border:2px solid var(--moss,#3D5A3E);border-radius:18px;padding:1.3rem 1.4rem;margin:1.8rem 0}
+.product-box .pb-img{flex:0 0 110px;height:110px;border-radius:12px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.product-box .pb-img img{max-width:100%;max-height:100%;object-fit:contain}
+.product-box .pb-body{flex:1;min-width:0}
+.product-box .pb-label{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--sand,#D4A96A)}
+.product-box h4{font-family:'Playfair Display',serif;font-size:1.15rem;margin:.2rem 0 .35rem;color:var(--bark,#2C1A0E)}
+.product-box p{margin:0 0 .8rem;font-size:.93rem;line-height:1.55;color:var(--text-muted,#6B5A4A)}
+.amz-btn{display:inline-block;background:#FFB21A;color:#1A1208!important;font-weight:700;text-decoration:none!important;border-radius:100px;padding:.65rem 1.4rem;font-size:.95rem;transition:background .2s}
+.amz-btn:hover{background:#F29B00}
+.disclosure-line{font-size:.75rem;color:var(--text-muted,#6B5A4A);margin:.6rem 0 0}
+.disclosure-line a{color:inherit}
+
+/* In-body related links (2-4 links) */
+.related-block{border-top:1px solid var(--sand-light,#EDD9B0);border-bottom:1px solid var(--sand-light,#EDD9B0);padding:1rem 0;margin:2rem 0}
+.related-block .rb-label{font-weight:700;color:var(--bark,#2C1A0E);margin-bottom:.4rem}
+.related-block ul{margin:0 0 0 1.1rem;padding:0}
+.related-block li{margin:.3rem 0}
+.related-block a{color:var(--moss,#3D5A3E)}
+
+/* Author / last-updated box */
+.author-box{display:flex;gap:1rem;align-items:flex-start;max-width:760px;margin:2.5rem auto 0;padding:1.2rem 1.4rem;background:var(--warm-white,#FFFEF9);border:1px solid var(--sand-light,#EDD9B0);border-radius:16px}
+.author-box .ab-icon{flex:0 0 48px;height:48px;border-radius:50%;background:var(--moss,#3D5A3E);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.1rem}
+.author-box .ab-name{font-weight:700;color:var(--bark,#2C1A0E)}
+.author-box .ab-meta{font-size:.8rem;color:var(--text-muted,#6B5A4A);margin:.15rem 0 .4rem}
+.author-box p{margin:0;font-size:.88rem;line-height:1.55;color:var(--text-muted,#6B5A4A)}
+.author-box a{color:var(--moss,#3D5A3E)}
+
+@media(max-width:600px){
+  .hero-article{padding:2rem 5vw 1.5rem!important}
+  .hero-article h1{font-size:1.75rem!important;line-height:1.2}
+  .quick-answer{margin:1rem 5vw 0;padding:1rem 1.1rem}
+  .product-box{flex-direction:column;align-items:flex-start;padding:1.1rem}
+  .product-box .pb-img{flex-basis:auto;width:100%;height:140px}
+  .amz-btn{display:block;text-align:center}
+}
