@@ -40,22 +40,23 @@ def slugify(t):
     return t[:60] or "section"
 
 
-def div_end(s, start):
-    """Index just after the </div> that closes the <div ...> starting at `start`."""
-    depth, i = 0, start
-    for m in re.finditer(r"<div\b|</div>", s[start:]):
-        depth += 1 if m.group(0) == "<div" else -1
+def div_end(s, start, tag="div"):
+    """Index just after the </tag> that closes the <tag ...> starting at `start` (div, main or section)."""
+    depth = 0
+    for m in re.finditer(rf"<{tag}\b|</{tag}>", s[start:]):
+        depth += 1 if m.group(0) == f"<{tag}" else -1
         if depth == 0:
             return start + m.end()
-    raise ValueError("unbalanced div")
+    raise ValueError(f"unbalanced {tag}")
 
 
 def content_bounds(s):
-    m = re.search(r'<div class="content"[^>]*>', s)
+    m = re.search(r'<(div|main) class="content"[^>]*>', s)
     if not m:
-        raise ValueError('no <div class="content">')
-    end = div_end(s, m.start())
-    return m.end(), end - len("</div>")
+        raise ValueError('no <div class="content"> or <main class="content">')
+    tag = m.group(1)
+    end = div_end(s, m.start(), tag)
+    return m.end(), end - len(f"</{tag}>")
 
 
 def check_amazon(url):
@@ -72,8 +73,8 @@ def apply(s, spec, kit_only=False):
     # 2. quick answer
     qa = spec.get("quick_answer")
     if qa and not kit_only and 'class="quick-answer"' not in s:
-        m = re.search(r'<div class="hero-article"', s)
-        pos = div_end(s, m.start()) if m else content_bounds(s)[0]
+        m = re.search(r'<(div|section) class="hero-article"', s)
+        pos = div_end(s, m.start(), m.group(1)) if m else content_bounds(s)[0]
         body = f'<p>{qa["text"]}</p>'
         if qa.get("bullets"):
             body += "<ul>" + "".join(f"<li>{b}</li>" for b in qa["bullets"]) + "</ul>"
