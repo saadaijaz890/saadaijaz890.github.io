@@ -62,12 +62,12 @@
   .amz-btn{display:block;text-align:center}
 }
 
-/* Article hero image: same size as homepage hero photo (493px, 3:2) (overrides per-page 100-120px circular avatar styles) */
+/* Article hero image: same size as homepage hero photo (493px, uncropped) (overrides per-page 100-120px circular avatar styles) */
 .hero-article img.breed-hero-img,
 .hero-article img.guide-hero-img,
 img.breed-hero-img,
 img.guide-hero-img{
-  display:block;width:100%;max-width:493px;height:auto;aspect-ratio:3/2;
-  object-fit:cover;border-radius:20px;border:0;
+  display:block;width:100%;max-width:493px;height:auto;
+  object-fit:contain;border-radius:20px;border:0;
   box-shadow:0 8px 28px rgba(0,0,0,.12);margin:1rem auto 1.5rem;
 }
