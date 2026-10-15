@@ -7,7 +7,7 @@ Usage:
     python3 scripts/generate_article.py \
         --breed "Beagle" \
         --breed-slug "beagle" \
-        --dog-ceo-path "beagle" \
+        --image-stem "beagle" \
         --title "Beagle Separation Anxiety: 5-Step Protocol 2026" \
         --slug "beagle-separation-anxiety-protocol" \
         --date "2026-03-17" \
@@ -138,15 +138,10 @@ __CSS_BLOCK__
 <div class="mobile-menu" id="mobileNav"><a href="/#guides" onclick="document.getElementById('mobileNav').classList.remove('open');document.getElementById('menuToggle').classList.remove('open')">Breed Guides</a><a href="/#products" onclick="document.getElementById('mobileNav').classList.remove('open');document.getElementById('menuToggle').classList.remove('open')">Top Products</a><a href="/#faq" onclick="document.getElementById('mobileNav').classList.remove('open');document.getElementById('menuToggle').classList.remove('open')">FAQ</a><a href="/#products" class="mob-cta" onclick="document.getElementById('mobileNav').classList.remove('open');document.getElementById('menuToggle').classList.remove('open')">Shop Now</a></div>
 ```
 
-## DOG IMAGE LAZY-LOAD PATTERN
-Use this exact pattern (fill in BREED and DOG_CEO_PATH):
+## DOG IMAGE STATIC HERO PATTERN
+Use this exact pattern (fill in BREED and image-stem):
 ```
-<img id="breed-hero" class="breed-hero-img" src="" alt="[BREED] dog" loading="lazy">
-<script>
-fetch('https://dog.ceo/api/breed/[DOG_CEO_PATH]/images/random')
-  .then(r=>r.json()).then(d=>{if(d.status==='success')document.getElementById('breed-hero').src=d.message})
-  .catch(()=>{});
-</script>
+<img class="breed-hero-img" src="/images/articles/[image-stem].webp" alt="[BREED] calm at home" width="120" height="120" loading="lazy">
 ```
 
 ## FULL PAGE STRUCTURE
@@ -165,11 +160,11 @@ fetch('https://dog.ceo/api/breed/[DOG_CEO_PATH]/images/random')
   <meta property="og:url" content="https://www.anxietyfreepups.com/blogs/[slug]"/>
   <meta property="og:title" content="[title]"/>
   <meta property="og:description" content="[description]"/>
-  <meta property="og:image" content="https://images.dog.ceo/breeds/[dog-ceo-path]/random.jpg"/>
+  <meta property="og:image" content="https://www.anxietyfreepups.com/images/articles/[image-stem].webp"/>
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:title" content="[title]"/>
   <meta name="twitter:description" content="[short description]"/>
-  <meta name="twitter:image" content="https://images.dog.ceo/breeds/[dog-ceo-path]/random.jpg"/>
+  <meta name="twitter:image" content="https://www.anxietyfreepups.com/images/articles/[image-stem].webp"/>
   [FONT LOADING]
   <style>[FULL CSS]</style>
   <script type="application/ld+json">[Article schema]</script>
@@ -181,7 +176,7 @@ fetch('https://dog.ceo/api/breed/[DOG_CEO_PATH]/images/random')
 <nav class="breadcrumb"><a href="/">Home</a> › <a href="/breeds/[breed-slug]">[Breed] Anxiety Guide</a> › [Short Article Title]</nav>
 <div class="hero-article">
   <span class="article-tag">DEEP DIVE</span>
-  [DOG IMAGE + SCRIPT]
+  [STATIC BREED HERO IMAGE]
   <h1>[Full Article Title]</h1>
   <p class="lead">[2-3 sentence breed-specific hook, 40-60 words]</p>
   <div class="meta"><span>✍️ By the AnxietyFreePups team</span><span>📅 Last updated [DATE]</span><span>⏱ 7 min read</span></div>
@@ -224,7 +219,7 @@ fetch('https://dog.ceo/api/breed/[DOG_CEO_PATH]/images/random')
 ## REQUIRED SCHEMAS
 
 Article:
-{{"@context":"https://schema.org","@type":"Article","headline":"[title]","description":"[meta description]","author":{{"@type":"Organization","name":"AnxietyFreePups"}},"publisher":{{"@type":"Organization","name":"AnxietyFreePups","url":"https://www.anxietyfreepups.com"}},"datePublished":"[YYYY-MM-DD]","dateModified":"[YYYY-MM-DD]","url":"https://www.anxietyfreepups.com/blogs/[slug]","image":{{"@type":"ImageObject","url":"https://images.dog.ceo/breeds/[dog-ceo-path]/random.jpg","width":1200,"height":630}}}}
+{{"@context":"https://schema.org","@type":"Article","headline":"[title]","description":"[meta description]","author":{{"@type":"Organization","name":"AnxietyFreePups"}},"publisher":{{"@type":"Organization","name":"AnxietyFreePups","url":"https://www.anxietyfreepups.com"}},"datePublished":"[YYYY-MM-DD]","dateModified":"[YYYY-MM-DD]","url":"https://www.anxietyfreepups.com/blogs/[slug]","image":{{"@type":"ImageObject","url":"https://www.anxietyfreepups.com/images/articles/[image-stem].webp","width":1200,"height":800}}}
 
 BreadcrumbList:
 {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"https://www.anxietyfreepups.com/"}},{{"@type":"ListItem","position":2,"name":"[Breed] Guide","item":"https://www.anxietyfreepups.com/breeds/[breed-slug]"}},{{"@type":"ListItem","position":3,"name":"[Article Title]","item":"https://www.anxietyfreepups.com/blogs/[slug]"}}]}}
@@ -253,7 +248,7 @@ FAQPage: Build from the actual FAQ items in the HTML. Minimum 3 Q&A pairs.
     return template.replace("__CSS_BLOCK__", CSS)
 
 
-def build_user_prompt(breed, breed_slug, dog_ceo_path, title, slug, date, breed_context, products_to_avoid):
+def build_user_prompt(breed, breed_slug, image_stem, title, slug, date, breed_context, products_to_avoid):
     year = date[:4]
     avoid_str = ", ".join(products_to_avoid) if products_to_avoid else "none listed"
 
@@ -261,7 +256,7 @@ def build_user_prompt(breed, breed_slug, dog_ceo_path, title, slug, date, breed_
 
 - Breed: {breed}
 - Breed slug: {breed_slug}
-- Dog.ceo API path: {dog_ceo_path}
+- Hero/og image path: /images/articles/{image_stem}.webp (do NOT use any external breed-image host; use this local path for img src, og:image, twitter:image, and Article JSON-LD).
 - Article title: {title}
 - URL slug: {slug}
 - Canonical URL: https://www.anxietyfreepups.com/blogs/{slug}
@@ -337,7 +332,7 @@ def main():
     parser = argparse.ArgumentParser(description="Generate blog article HTML via OpenAI gpt-4o")
     parser.add_argument("--breed", required=True, help='Breed name, e.g. "Beagle"')
     parser.add_argument("--breed-slug", required=True, help='Breed slug, e.g. "beagle"')
-    parser.add_argument("--dog-ceo-path", required=True, help='dog.ceo API path, e.g. "beagle"')
+    parser.add_argument("--image-stem", required=True, help='Local image stem under /images/articles/, e.g. "beagle" → /images/articles/beagle.webp')
     parser.add_argument("--title", required=True, help="Full article title")
     parser.add_argument("--slug", required=True, help='Full URL slug, e.g. "beagle-separation-anxiety-protocol"')
     parser.add_argument("--date", required=True, help="Publication date YYYY-MM-DD")
@@ -386,7 +381,7 @@ def main():
     user_prompt = build_user_prompt(
         breed=args.breed,
         breed_slug=args.breed_slug,
-        dog_ceo_path=args.dog_ceo_path,
+        image_stem=args.image_stem,
         title=args.title,
         slug=args.slug,
         date=args.date,
