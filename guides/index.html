@@ -49,8 +49,10 @@
     .guide-card{background:var(--warm-white);border-radius:20px;overflow:hidden;border:1px solid rgba(212,169,106,.25);box-shadow:var(--shadow);transition:all .3s ease;display:flex;flex-direction:column;text-decoration:none;color:inherit}
     .guide-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-hover);border-color:var(--moss-light)}
     .guide-card[data-hidden]{display:none}
-    .card-thumb{height:160px;display:flex;align-items:center;justify-content:center;font-size:3.5rem;position:relative;overflow:hidden}
-    .card-cat{position:absolute;top:12px;left:12px;background:var(--bark);color:var(--sand-light);padding:.25rem .75rem;border-radius:100px;font-size:.7rem;font-weight:500;letter-spacing:.05em}
+    .card-thumb{aspect-ratio:3/2;display:flex;align-items:center;justify-content:center;font-size:3.5rem;position:relative;overflow:hidden;flex-shrink:0}
+    .card-thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+    .card-thumb img.fit-contain{object-fit:contain}
+    .card-cat{position:absolute;z-index:1;top:12px;left:12px;box-shadow:0 2px 8px rgba(0,0,0,.25);background:var(--bark);color:var(--sand-light);padding:.25rem .75rem;border-radius:100px;font-size:.7rem;font-weight:500;letter-spacing:.05em}
     .card-body{padding:1.5rem;flex:1;display:flex;flex-direction:column}
     .card-body h2{font-family:'Playfair Display',Georgia,serif;font-size:1.1rem;font-weight:700;color:var(--bark);margin-bottom:.6rem;line-height:1.3}
     .card-body p{font-size:.85rem;color:var(--text-muted);line-height:1.55;flex:1}
@@ -117,7 +119,7 @@
   <div class="guides-grid" id="guidesGrid">
 
                 <a href="separation-anxiety-signs" class="guide-card" data-tags="behavior">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#6B8F6C,#D4A96A)"><span>🔍</span><span class="card-cat">BEHAVIOR GUIDE</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#6B8F6C,#D4A96A)"><img src="/images/articles/separation-anxiety-signs.webp" alt="Medium mixed-breed dog alone near a closed front door in a living room, looking uncertain" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">BEHAVIOR GUIDE</span></div>
       <div class="card-body">
         <h2>Separation Anxiety or Boredom? 10 Signs</h2>
         <p>Barking, chewing or messes when you leave? 10 signs that separate boredom from separation anxiety, a 48-hour observation checklist, and next steps.</p>
@@ -126,7 +128,7 @@
     </a>
 
     <a href="puppy-separation-anxiety" class="guide-card" data-tags="behavior puppy">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#D4A96A,#6B8F6C)"><span>🐶</span><span class="card-cat">TRAINING GUIDE</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#D4A96A,#6B8F6C)"><img src="/images/articles/puppy-separation-anxiety.webp" alt="Golden Retriever puppy resting in a soft bed inside a wire playpen as a person walks out the door" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">TRAINING GUIDE</span></div>
       <div class="card-body">
         <h2>Puppy Separation Anxiety: A Week-by-Week Plan</h2>
         <p>Week-by-week independence plan for puppies who cry when left alone: alone-time by age, safe puppy zones, nights, and when to get help.</p>
@@ -135,7 +137,7 @@
     </a>
 
     <a href="slow-feeders-lick-mats-anxious-dogs" class="guide-card" data-tags="product enrichment">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#D4A96A,#6B8F6C)"><span>🥣</span><span class="card-cat">BUYING GUIDE</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#D4A96A,#6B8F6C)"><img src="/images/articles/slow-feeders-lick-mats-anxious-dogs.webp" alt="Golden-and-white dog calmly licking food from a green textured lick mat on a bright kitchen floor" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">BUYING GUIDE</span></div>
       <div class="card-body">
         <h2>Slow Feeders and Lick Mats for Anxious Dogs: Do They Help?</h2>
         <p>Slow bowls, lick mats, snuffle mats and puzzles compared: what they can and can’t do, safe fillings, cleaning, and a 7-day calm mealtime routine.</p>
@@ -144,7 +146,7 @@
     </a>
 
     <a href="do-calming-dog-beds-work" class="guide-card" data-tags="product behavior">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#6B8F6C,#D4A96A)"><span>🛏️</span><span class="card-cat">BUYING GUIDE</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#6B8F6C,#D4A96A)"><img src="/images/articles/do-calming-dog-beds-work.webp" alt="Calm dog curled up asleep in a round donut-style calming bed in a cozy living room" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">BUYING GUIDE</span></div>
       <div class="card-body">
         <h2>Do Calming Dog Beds Work? How to Choose the Right Size and a Washable Bed</h2>
         <p>What a donut, orthopedic, cave or crate-pad bed can and can’t do, how to measure your dog, washable covers, and a 7-day new bed routine.</p>
@@ -153,7 +155,7 @@
     </a>
 
 <a href="best-pet-camera-separation-anxiety" class="guide-card" data-tags="product behavior">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#5C3D2A,#6B8F6C)"><span>📷</span><span class="card-cat">BUYING GUIDE</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#5C3D2A,#6B8F6C)"><img src="/images/articles/best-pet-camera-separation-anxiety.webp" alt="Calm dog resting in a living room watched by a small pet camera on a shelf" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">BUYING GUIDE</span></div>
       <div class="card-body">
         <h2>Best Pet Cameras for Separation Anxiety: Furbo vs Petcube vs Wyze</h2>
         <p>Furbo vs Petcube vs Wyze: which pet camera helps you see what happens when you leave, with a first-week log and setup tips.</p>
@@ -162,7 +164,7 @@
     </a>
 
 <a href="crates-for-anxious-dogs" class="guide-card" data-tags="product behavior">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#5C3D2A,#6B8F6C)"><span>🏠</span><span class="card-cat">BUYING GUIDE</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#5C3D2A,#6B8F6C)"><img src="/images/articles/crates-for-anxious-dogs.webp" alt="Calm mixed-breed dog resting inside an open wire crate beside a foldable exercise pen in a living room" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">BUYING GUIDE</span></div>
       <div class="card-body">
         <h2>Crates &amp; Pens for Anxious Dogs: How to Choose</h2>
         <p>Wire crate vs plastic kennel vs heavy-duty vs exercise pen: how to choose a safe setup for a nervous dog, with sizing and a calm intro plan.</p>
@@ -171,7 +173,7 @@
     </a>
 
 <a href="separation-anxiety" class="guide-card" data-tags="behavior">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#6B8F6C,#3D5A3E)"><span>🐾</span><span class="card-cat">COMPLETE GUIDE</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#6B8F6C,#3D5A3E)"><img src="/images/articles/separation-anxiety.webp" alt="Anxious dog sitting alone near a closed front door waiting for an owner to return" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">COMPLETE GUIDE</span></div>
       <div class="card-body">
         <h2>Dog Separation Anxiety: Signs &amp; Step-by-Step Treatment</h2>
         <p>Recognize the signs, check severity, follow an 8-step alone-time protocol, and compare treatments and calming aids.</p>
@@ -180,7 +182,7 @@
     </a>
 
     <a href="calming-chews" class="guide-card" data-tags="product">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#D4A96A,#8B5E3C)"><span>🐕</span><span class="card-cat">QUICK-FIX</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#D4A96A,#8B5E3C)"><img src="/images/articles/calming-chews.webp" alt="Relaxed Labrador lying on a living room rug next to a small bowl of calming chews" width="1200" height="675" loading="lazy" decoding="async" class="fit-contain"><span class="card-cat">QUICK-FIX</span></div>
       <div class="card-body">
         <h2>How Long Do Calming Chews Take to Work?</h2>
         <p>The #1 question dog owners ask. Every top brand ranked by speed, ingredients, and cost per dose.</p>
@@ -189,7 +191,7 @@
     </a>
 
     <a href="best-calming-chews-for-dogs" class="guide-card" data-tags="product">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#6B8F6C,#D4A96A)"><span>🦴</span><span class="card-cat">BUYER'S GUIDE</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#6B8F6C,#D4A96A)"><img src="/images/articles/best-calming-chews.webp" alt="Calm dog accepting a soft calming chew from an owner hand" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">BUYER'S GUIDE</span></div>
       <div class="card-body">
         <h2>Best Calming Chews for Dogs: 7 Practical Options</h2>
         <p>Compare the best calming chews for dogs, their ingredients, safety concerns, and timing, plus two non-chew alternatives.</p>
@@ -199,7 +201,7 @@
 
 
     <a href="dog-dementia-night-calming" class="guide-card" data-tags="situational">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#6B7FA8,#3D4A7A)"><span>🌙</span><span class="card-cat">SENIOR DOGS</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#6B7FA8,#3D4A7A)"><img src="/images/articles/dog-dementia-night-calming.webp" alt="Senior golden retriever with a grey muzzle resting on an orthopedic dog bed beside a low night light while its owner calms it at night" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">SENIOR DOGS</span></div>
       <div class="card-body">
         <h2>How to Calm a Dog With Dementia at Night</h2>
         <p>Night routine, safe sleep setup, 3 a.m. wake-ups and a printable checklist for dogs with dementia (CCD).</p>
@@ -208,7 +210,7 @@
     </a>
 
     <a href="adaptil-calming-pheromones-review" class="guide-card" data-tags="product">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#5B8FA8,#3D6A7A)"><span>💨</span><span class="card-cat">PRODUCT REVIEW</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#5B8FA8,#3D6A7A)"><img src="/images/articles/adaptil-calming-pheromones.webp" alt="Calm dog resting in a living room near a plug-in calming diffuser" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">PRODUCT REVIEW</span></div>
       <div class="card-body">
         <h2>Calming Pheromones for Dogs: Do Diffusers Work?</h2>
         <p>Calming diffusers for dogs compared, plus the evidence, setup tips and Adaptil vs ThunderEase.</p>
@@ -217,7 +219,7 @@
     </a>
 
     <a href="thundershirt-review" class="guide-card" data-tags="product situational">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#9B7DBF,#6B4FA0)"><span>🧥</span><span class="card-cat">PRODUCT REVIEW</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#9B7DBF,#6B4FA0)"><img src="/images/articles/thundershirt-review.webp" alt="Calm medium dog indoors wearing a snug gray anxiety vest" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">PRODUCT REVIEW</span></div>
       <div class="card-body">
         <h2>Do Thundershirts Work? An Honest Review</h2>
         <p>What the research really shows, sizing guide, honest verdict, and when to combine it with other products.</p>
@@ -226,7 +228,7 @@
     </a>
 
     <a href="nighttime-anxiety" class="guide-card" data-tags="behavior situational">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#2C1A0E,#4A3020)"><span>🌙</span><span class="card-cat">NIGHT ANXIETY</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#2C1A0E,#4A3020)"><img src="/images/articles/nighttime-anxiety.webp" alt="Gray-muzzled senior dog resting in an orthopedic dog bed in a dim bedroom lit by a soft night lamp" width="1200" height="675" loading="lazy" decoding="async" class="fit-contain"><span class="card-cat">NIGHT ANXIETY</span></div>
       <div class="card-body">
         <h2>Dog Nighttime Anxiety: Causes, Signs &amp; Calming Tips</h2>
         <p>Pacing, whining or waking at night? Why puppies, adults and senior dogs struggle after dark, a bedtime routine, and when to see the vet.</p>
@@ -235,7 +237,7 @@
     </a>
 
     <a href="leash-reactivity" class="guide-card" data-tags="behavior">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#5C7A9B,#2C4A6A)"><span>🦮</span><span class="card-cat">LEASH ANXIETY</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#5C7A9B,#2C4A6A)"><img src="/images/articles/leash-reactivity.webp" alt="Dog on a leash looking tense toward another dog in the distance on a sidewalk" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">LEASH ANXIETY</span></div>
       <div class="card-body">
         <h2>Why Your Dog Lunges on Leash (And the 3-Step Calm-Down Fix)</h2>
         <p>Leash reactivity is anxiety, not aggression — threshold method and counter-conditioning protocol that stops it.</p>
@@ -244,7 +246,7 @@
     </a>
 
     <a href="vet-visit-anxiety" class="guide-card" data-tags="situational">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#4A7C59,#2C5040)"><span>🏥</span><span class="card-cat">VET ANXIETY</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#4A7C59,#2C5040)"><img src="/images/articles/vet-visit-anxiety.webp" alt="Nervous beagle on a vet exam table comforted by its owner while a vet offers a treat" width="1200" height="675" loading="lazy" decoding="async" class="fit-contain"><span class="card-cat">VET ANXIETY</span></div>
       <div class="card-body">
         <h2>How to Calm a Dog Terrified of the Vet: Before, During &amp; After</h2>
         <p>60% of dogs show stress at vet visits. The exact before, during, and after plan — including pre-visit medication options.</p>
@@ -253,7 +255,7 @@
     </a>
 
     <a href="car-travel-anxiety" class="guide-card" data-tags="situational">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#7A5C3E,#4A3020)"><span>🚗</span><span class="card-cat">TRAVEL ANXIETY</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#7A5C3E,#4A3020)"><img src="/images/articles/car-travel-anxiety.webp" alt="Labrador Retriever sitting calmly in the back seat of a car in a dog car harness while its owner offers a treat from the open door" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">TRAVEL ANXIETY</span></div>
       <div class="card-body">
         <h2>Why Your Dog Panics in the Car — The 3-Step Desensitization Fix</h2>
         <p>1 in 3 owners avoid car trips with their dog. The 3-step desensitization protocol that breaks the car-anxiety cycle for good.</p>
@@ -262,7 +264,7 @@
     </a>
 
     <a href="grooming-anxiety" class="guide-card" data-tags="situational behavior">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#C49A6C,#8B6040)"><span>✂️</span><span class="card-cat">GROOMING</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#C49A6C,#8B6040)"><img src="/images/articles/grooming-anxiety.webp" alt="Standard Poodle standing calmly on a grooming table while a groomer brushes it gently and offers a treat" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">GROOMING</span></div>
       <div class="card-body">
         <h2>Dog Scared of the Groomer? Step-by-Step Desensitization Plan</h2>
         <p>About 40% of dogs show anxiety at the groomer. At-home prep, choosing the right groomer, and tools that help.</p>
@@ -271,7 +273,7 @@
     </a>
 
     <a href="rescue-dog-anxiety" class="guide-card" data-tags="behavior">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#8B5E3C,#5C3A20)"><span>🏠</span><span class="card-cat">RESCUE DOG</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#8B5E3C,#5C3A20)"><img src="/images/articles/rescue-dog-anxiety.webp" alt="Shy mixed-breed rescue dog resting on a soft bed in a quiet corner of its new home while its owner sits calmly nearby" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">RESCUE DOG</span></div>
       <div class="card-body">
         <h2>New Rescue Dog Won't Settle? The 3-3-3 Rule and 7 Strategies for the First 30 Days</h2>
         <p>The 3-3-3 rule explained plus 7 proven anxiety-busting strategies for newly adopted rescue dogs.</p>
@@ -280,7 +282,7 @@
     </a>
 
     <a href="noise-phobia" class="guide-card" data-tags="situational behavior">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#4A3A6A,#2C1A4A)"><span>🔊</span><span class="card-cat">NOISE PHOBIA</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#4A3A6A,#2C1A4A)"><img src="/images/articles/noise-phobia.webp" alt="Siberian Husky lying calmly on a mat while its owner holds a switched-off vacuum across the room and tosses a treat" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">NOISE PHOBIA</span></div>
       <div class="card-body">
         <h2>Dog Scared of Vacuums, Construction &amp; Everyday Noises: Beyond Thunderstorm Phobia</h2>
         <p>Dogs hear nearly 3x more than humans. Why everyday noises terrify some dogs and how to use sound therapy to fix it.</p>
@@ -289,7 +291,7 @@
     </a>
 
     <a href="enrichment-for-anxiety" class="guide-card" data-tags="enrichment behavior">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#3D5A3E,#6B8F6C)"><span>🧩</span><span class="card-cat">ENRICHMENT</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#3D5A3E,#6B8F6C)"><img src="/images/articles/enrichment-for-anxiety.webp" alt="Golden Retriever focused on a puzzle feeder and lick mat on a living room rug" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">ENRICHMENT</span></div>
       <div class="card-body">
         <h2>Enrichment for Anxious Dogs: 5 Puzzle Toys and Activities That Lower Stress</h2>
         <p>Mental exhaustion calms anxious dogs more than physical exercise alone. The 5-category enrichment plan that actually works.</p>
@@ -298,7 +300,7 @@
     </a>
 
     <a href="dog-calming-products" class="guide-card" data-tags="product">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#D4A96A,#6B8F6C)"><span>🛒</span><span class="card-cat">BUYER'S GUIDE</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#D4A96A,#6B8F6C)"><img src="/images/articles/dog-calming-products.webp" alt="Calm dog resting beside calming aids including a soft pressure vest, calming chews, and a plug-in diffuser" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">BUYER'S GUIDE</span></div>
       <div class="card-body">
         <h2>Best Dog Calming Aids: 12 Options Compared by Problem</h2>
         <p>12 calming aids compared by problem (noise, being alone, travel, vet visits and daily anxiety), with honest evidence notes, limitations and a smart pick for each.</p>
@@ -307,7 +309,7 @@
     </a>
 
     <a href="thundershirt-vs-calming-chews" class="guide-card" data-tags="product situational">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#9B7DBF,#D4A96A)"><span>⚖️</span><span class="card-cat">COMPARISON</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#9B7DBF,#D4A96A)"><img src="/images/articles/thundershirt-vs-calming-chews.webp" alt="Side-by-side photo of a dog wearing a gray anxiety wrap and a dog taking a calming chew from a hand" width="1200" height="675" loading="lazy" decoding="async" class="fit-contain"><span class="card-cat">COMPARISON</span></div>
       <div class="card-body">
         <h2>Thundershirt vs Calming Chews: Which Works Best?</h2>
         <p>How each one works, how fast it kicks in, when to use which, and how to combine both for the toughest days.</p>
@@ -316,7 +318,7 @@
     </a>
 
     <a href="thundershirt-not-working-fixes" class="guide-card" data-tags="product situational">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#6B4FA0,#3D5A3E)"><span>🔧</span><span class="card-cat">TROUBLESHOOTING</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#6B4FA0,#3D5A3E)"><img src="/images/articles/thundershirt-not-working-fixes.webp" alt="Owner kneeling to adjust the fit of a snug gray anxiety wrap on a worried dog at home" width="1200" height="675" loading="lazy" decoding="async" class="fit-contain"><span class="card-cat">TROUBLESHOOTING</span></div>
       <div class="card-body">
         <h2>Thundershirt Not Working? 7 Fixes + Best Alternatives</h2>
         <p>The most common reasons an anxiety wrap fails, how to fix each one, and what to try when wraps won't help.</p>
@@ -325,7 +327,7 @@
     </a>
 
     <a href="thundershirt-alternatives" class="guide-card" data-tags="product">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#5C7A9B,#9B7DBF)"><span>🧥</span><span class="card-cat">PRODUCT REVIEW</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#5C7A9B,#9B7DBF)"><img src="/images/articles/thundershirt-alternatives.webp" alt="Three plain dog anxiety wraps in charcoal, sage and navy laid out on a wooden floor beside a calm dog" width="1200" height="675" loading="lazy" decoding="async" class="fit-contain"><span class="card-cat">PRODUCT REVIEW</span></div>
       <div class="card-body">
         <h2>Thundershirt Alternatives: 5 Anxiety Vests Ranked</h2>
         <p>Five anxiety vests compared side by side on fit, comfort and value, with pros and cons for each.</p>
@@ -335,7 +337,7 @@
 
 
     <a href="anxiety-wrap-vs-thundershirt" class="guide-card" data-tags="product situational">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#5C3D2A,#6B8F6C)"><span>⚖️</span><span class="card-cat">COMPARISON</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#5C3D2A,#6B8F6C)"><img src="/images/articles/anxiety-wrap-vs-thundershirt.webp" alt="Calm mixed-breed dog wearing a grey calming vest beside a folded grey T-shirt and a navy anxiety wrap on a cream rug" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">COMPARISON</span></div>
       <div class="card-body">
         <h2>Anxiety Wrap vs ThunderShirt: Which Is Better for Dogs?</h2>
         <p>ThunderShirt Classic, Anxiety Wrap, an AKC calming coat and a DIY T-shirt compared on fit, sizing, heat and price, with picks by dog type.</p>
@@ -344,7 +346,7 @@
     </a>
 
     <a href="thundershirt-size-guide" class="guide-card" data-tags="product">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#3D5A3E,#6B8F6C)"><span>📐</span><span class="card-cat">SIZING</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#3D5A3E,#6B8F6C)"><img src="/images/articles/thundershirt-size-guide.webp" alt="Owner fitting a grey anxiety vest wrap on a calm mixed-breed dog indoors" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">SIZING</span></div>
       <div class="card-body">
         <h2>ThunderShirt Size Guide: Chart &amp; Fit Checks</h2>
         <p>Full XXS–XXL chest-girth chart, between-size advice, fit checks, and breed starting sizes for all 18 hubs.</p>
@@ -353,7 +355,7 @@
     </a>
 
     <a href="thundershirt-large-dog-sizing" class="guide-card" data-tags="product">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#7A5C3E,#9B7DBF)"><span>📏</span><span class="card-cat">SIZING</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#7A5C3E,#9B7DBF)"><img src="/images/articles/thundershirt-large-dog-sizing.webp" alt="Large Golden Retriever in a fitted gray anxiety wrap while an owner checks the chest fit" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">SIZING</span></div>
       <div class="card-body">
         <h2>Thundershirt Sizing for Large Dogs: Golden, GSD, Lab &amp; More</h2>
         <p>A girth-based size chart plus breed-by-breed picks for Golden Retrievers, German Shepherds, Labs, Huskies and more.</p>
@@ -362,7 +364,7 @@
     </a>
 
     <a href="thundershirt-fireworks-protocol" class="guide-card" data-tags="situational product">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#2C1A4A,#C49A6C)"><span>🎆</span><span class="card-cat">FIREWORKS</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#2C1A4A,#C49A6C)"><img src="/images/articles/thundershirt-fireworks-protocol.webp" alt="Dog wearing a snug gray anxiety wrap resting in a quiet lamp-lit living room" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">FIREWORKS</span></div>
       <div class="card-body">
         <h2>Thundershirt for Fireworks: July 4th Calming Protocol</h2>
         <p>A step-by-step fireworks night plan: when to put the wrap on, calming aids, and how to set up a safe room.</p>
@@ -371,7 +373,7 @@
     </a>
 
     <a href="dog-peeing-when-left-alone" class="guide-card" data-tags="behavior">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#6B8F6C,#C9A26B)"><span>🚪</span><span class="card-cat">ACCIDENTS WHEN ALONE</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#6B8F6C,#C9A26B)"><img src="/images/articles/dog-peeing-when-left-alone.webp" alt="A brown and white dog in an olive harness sitting calmly on a woven rug by the front door while its owner clips on a leash for a potty walk" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">ACCIDENTS WHEN ALONE</span></div>
       <div class="card-body">
         <h2>Dog Peeing or Pooping When Left Alone: Anxiety, House-Training or Medical?</h2>
         <p>Coming home to puddles or a soiled crate? Work out whether it is a potty-schedule, medical or anxiety problem, clean it properly, and plan better breaks.</p>
@@ -380,7 +382,7 @@
     </a>
 
     <a href="best-chew-toys-aggressive-chewers" class="guide-card" data-tags="product enrichment">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#5A4632,#6B8F6C)"><span>🦷</span><span class="card-cat">CHEW TOYS</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#5A4632,#6B8F6C)"><img src="/images/articles/best-chew-toys-aggressive-chewers.webp" alt="A golden retriever lying on a wooden floor in a bright living room, gnawing a black rubber chew toy held between its front paws, with a spiky rubber ball, a rubber tire toy and two bone-shaped chew toys nearby" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">CHEW TOYS</span></div>
       <div class="card-body">
         <h2>Best Chew Toys for Aggressive Chewers: How to Choose Durable, Safe Toys</h2>
         <p>Dog wrecks toys in minutes? Compare chew toy materials, pick the right size and style for a power chewer, and learn which hard chews to avoid.</p>
@@ -389,7 +391,7 @@
     </a>
 
     <a href="dog-destructive-when-left-alone" class="guide-card" data-tags="behavior">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#8B6040,#6B8F6C)"><span>🛋️</span><span class="card-cat">DESTRUCTION WHEN ALONE</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#8B6040,#6B8F6C)"><img src="/images/articles/dog-destructive-when-left-alone.webp" alt="A calm medium-size dog lying on a soft bed behind a low exercise pen in a tidy, dog-proofed living room corner, chewing a red rubber stuffable toy, with a chewed cushion moved up onto a high shelf" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">DESTRUCTION WHEN ALONE</span></div>
       <div class="card-body">
         <h2>Dog Destructive When Left Alone? Causes and a Humane Plan</h2>
         <p>Coming home to chewed doors, a wrecked crate or shredded cushions? Read what the damage may mean, dog-proof safely, and follow a gentle alone-time plan.</p>
@@ -398,7 +400,7 @@
     </a>
 
     <a href="dog-anxiety-apartment-hallway-noise" class="guide-card" data-tags="behavior">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#8B6040,#6B8F6C)"><span>🚪</span><span class="card-cat">APARTMENT NOISE</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#8B6040,#6B8F6C)"><img src="/images/articles/dog-anxiety-apartment-hallway-noise.webp" alt="A calm mixed-breed dog resting on a beige bolster bed in a warm apartment living room at dusk, looking toward the closed front door, with a small white noise machine on a side table beside a lamp" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">APARTMENT NOISE</span></div>
       <div class="card-body">
         <h2>Dog Anxious About Apartment Hallway Noise? How to Help</h2>
         <p>Dog barks or worries at footsteps, doors and elevators outside your apartment? Quick fixes for today plus a gentle hallway sound training plan.</p>
@@ -407,7 +409,7 @@
     </a>
 
     <a href="lick-mat-vs-snuffle-mat-vs-puzzle-feeder" class="guide-card" data-tags="product enrichment">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#8B6040,#6B8F6C)"><span>🧩</span><span class="card-cat">ENRICHMENT COMPARED</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#8B6040,#6B8F6C)"><img src="/images/articles/lick-mat-vs-snuffle-mat-vs-puzzle-feeder.webp" alt="Tricolor beagle-mix dog lying on a woven rug, licking a green silicone lick mat spread with soft food, with a green and cream snuffle mat and a round sliding puzzle feeder holding kibble beside it" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">ENRICHMENT COMPARED</span></div>
       <div class="card-body">
         <h2>Lick Mat vs Snuffle Mat vs Puzzle Feeder: Which Calms an Anxious Dog?</h2>
         <p>Lick mat, snuffle mat, or puzzle feeder? Compare how each works, which suits your anxious dog, safety for chewers, and a simple 7-day rotation.</p>
@@ -416,7 +418,7 @@
     </a>
 
     <a href="dog-vacuum-fear" class="guide-card" data-tags="behavior">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#8B6040,#6B8F6C)"><span>🧹</span><span class="card-cat">VACUUM FEAR</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#8B6040,#6B8F6C)"><img src="/images/articles/dog-vacuum-fear.webp" alt="Mixed-breed dog lying calmly on a rug licking a red KONG toy while an owner tosses a treat, with an upright vacuum cleaner parked in the background" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">VACUUM FEAR</span></div>
       <div class="card-body">
         <h2>Dog Scared of the Vacuum Cleaner? A Calm, Step-by-Step Fix</h2>
         <p>Dog hides from or chases the vacuum? Clean while they rest in a quieter room, then build comfort with a gentle, step-by-step training ladder.</p>
@@ -425,7 +427,7 @@
     </a>
 
     <a href="prep-pet-sitter-anxious-dog" class="guide-card" data-tags="behavior">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#8B6040,#6B8F6C)"><span>🏠</span><span class="card-cat">PET SITTER PREP</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#8B6040,#6B8F6C)"><img src="/images/articles/prep-pet-sitter-anxious-dog.webp" alt="Pet sitter kneeling on a rug and offering a red stuffable chew toy to a calm shepherd-mix dog resting on a round donut bed, with a leash and care notes on the side table" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">PET SITTER PREP</span></div>
       <div class="card-body">
         <h2>How to Prep a Pet Sitter for an Anxious Dog</h2>
         <p>Leaving a nervous dog with a sitter? Pick the right level of care, introduce the sitter slowly, run a trial absence, and leave a clear care sheet.</p>
@@ -434,7 +436,7 @@
     </a>
 
     <a href="dog-afraid-smoke-detector-beeping" class="guide-card" data-tags="behavior">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#8B6040,#6B8F6C)"><span>🔔</span><span class="card-cat">SMOKE ALARM FEAR</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#8B6040,#6B8F6C)"><img src="/images/articles/dog-afraid-smoke-detector-beeping.webp" alt="Worried mixed-breed dog resting on soft bedding inside a blanket-covered wire crate while an owner&#x27;s hand offers a stuffed KONG-style toy in a sunny living room with a smoke detector on the ceiling." width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">SMOKE ALARM FEAR</span></div>
       <div class="card-body">
         <h2>Dog Afraid of Smoke Detector Beeping</h2>
         <p>Dog panics at a detector chirp? Stop the beep safely without disabling the alarm, build a safe retreat, and try low-volume beep training.</p>
@@ -443,7 +445,7 @@
     </a>
 
     <a href="dog-wont-eat-when-left-alone" class="guide-card" data-tags="behavior">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#8B6040,#6B8F6C)"><span>🥣</span><span class="card-cat">WON’T EAT ALONE</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#8B6040,#6B8F6C)"><img src="/images/articles/dog-wont-eat-when-left-alone.webp" alt="Calm mixed-breed dog resting on a kitchen floor beside a full food bowl and stuffed toy, watching the front door." width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">WON’T EAT ALONE</span></div>
       <div class="card-body">
         <h2>Dog Won&#x27;t Eat When Left Alone</h2>
         <p>Dog skips meals only when you’re out? Use a cause check, 48-hour observation checklist, and calm feeding plan.</p>
@@ -452,7 +454,7 @@
     </a>
 
     <a href="dog-anxiety-after-moving" class="guide-card" data-tags="behavior">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#8B6040,#6B8F6C)"><span>🏠</span><span class="card-cat">MOVING HOUSE</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#8B6040,#6B8F6C)"><img src="/images/articles/dog-anxiety-after-moving.webp" alt="Calm mixed-breed dog resting on a cushioned bed in a new living room beside half-unpacked moving boxes and a plug-in diffuser" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">MOVING HOUSE</span></div>
       <div class="card-body">
         <h2>Dog Anxiety After Moving House</h2>
         <p>Dog stressed after a move? Use a safe room, moving-day checklist, and first-72-hours plan to settle in.</p>
@@ -461,7 +463,7 @@
     </a>
 
     <a href="dog-barking-when-left-alone" class="guide-card" data-tags="behavior">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#8B6040,#6B8F6C)"><span>🔉</span><span class="card-cat">ALONE BARKING</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#8B6040,#6B8F6C)"><img src="/images/articles/dog-barking-when-left-alone.webp" alt="Mixed-breed dog home alone, watching a closed front door from a rug in a quiet, naturally lit living room." width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">ALONE BARKING</span></div>
       <div class="card-body">
         <h2>Dog Barking When Left Alone</h2>
         <p>Barking or howling after you leave? Tell boredom from separation anxiety, run a quiet-alone plan, and use a camera to see when it starts.</p>
@@ -470,7 +472,7 @@
     </a>
 
     <a href="stop-dog-barking" class="guide-card" data-tags="behavior">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#8B6040,#4A3020)"><span>🔇</span><span class="card-cat">BARKING</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#8B6040,#4A3020)"><img src="/images/articles/stop-dog-barking.webp" alt="Alert dog barking at a home window while an owner offers a redirect treat" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">BARKING</span></div>
       <div class="card-body">
         <h2>How to Stop a Dog From Barking: Humane Methods</h2>
         <p>Humane ways to stop barking: the 3-bark rule, commands that work, and kinder alternatives to shock collars.</p>
@@ -479,7 +481,7 @@
     </a>
 
     <a href="dog-body-language" class="guide-card" data-tags="behavior">
-      <div class="card-thumb" style="background:linear-gradient(135deg,#6B8F6C,#5C7A9B)"><span>👀</span><span class="card-cat">BODY LANGUAGE</span></div>
+      <div class="card-thumb" style="background:linear-gradient(135deg,#6B8F6C,#5C7A9B)"><img src="/images/articles/dog-body-language.webp" alt="Calm mixed-breed dog making soft eye contact with its owner in a warm living room" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">BODY LANGUAGE</span></div>
       <div class="card-body">
         <h2>Dog Body Language: What Your Dog Is Really Telling You</h2>
         <p>Read the early signs of stress, fear and happiness in your dog's ears, tail, eyes and posture before anxiety builds.</p>
