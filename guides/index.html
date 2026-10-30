@@ -115,6 +115,7 @@
     <button class="filter-btn" onclick="filterGuides('product',this)">Product Reviews</button>
     <button class="filter-btn" onclick="filterGuides('situational',this)">Situational</button>
     <button class="filter-btn" onclick="filterGuides('enrichment',this)">Enrichment</button>
+    <button class="filter-btn" id="filter-seasonal" onclick="filterGuides('seasonal',this)">Seasonal (US)</button>
   </div>
 
   <div class="guides-grid" id="guidesGrid">
@@ -400,7 +401,7 @@
       </div>
     </a>
 
-    <a href="july-4th-dog-home-alone" class="guide-card" data-tags="behavior situational">
+    <a href="july-4th-dog-home-alone" class="guide-card" data-tags="behavior situational seasonal">
       <div class="card-thumb" style="background:linear-gradient(135deg,#6B8F6C,#C9A26B)"><img src="/images/articles/july-4th-dog-home-alone.webp" alt="Calm mixed-breed dog resting on a plush bed in a dim lamp-lit room at dusk with curtains mostly drawn, a white noise machine on a side table, a blue rubber food toy and a water bowl nearby and faint fireworks glowing through the window" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">JULY 4TH</span></div>
       <div class="card-body">
         <h2>July 4th When You Can&#x27;t Be Home: A Plan for a Dog Left Alone During Fireworks</h2>
@@ -436,7 +437,7 @@
       </div>
     </a>
 
-    <a href="holiday-season-dog-separation-anxiety" class="guide-card" data-tags="behavior situational">
+    <a href="holiday-season-dog-separation-anxiety" class="guide-card" data-tags="behavior situational seasonal">
       <div class="card-thumb" style="background:linear-gradient(135deg,#6B8F6C,#C9A26B)"><img src="/images/articles/holiday-season-dog-separation-anxiety.webp" alt="A brown and black dog resting on a fleece dog bed in a cozy living room, with a lit Christmas tree behind a black pet gate, a white noise machine and white pet camera on a side table, a green rubber food toy on the rug and a person&#x27;s legs in wool socks on the couch" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">HOLIDAY SEASON</span></div>
       <div class="card-body">
         <h2>Christmas and New Year&#x27;s Plan for a Dog With Separation Anxiety</h2>
@@ -445,7 +446,7 @@
       </div>
     </a>
 
-    <a href="holiday-travel-dog-separation-anxiety" class="guide-card" data-tags="behavior situational">
+    <a href="holiday-travel-dog-separation-anxiety" class="guide-card" data-tags="behavior situational seasonal">
       <div class="card-thumb" style="background:linear-gradient(135deg,#6B8F6C,#C9A26B)"><img src="/images/articles/holiday-travel-dog-separation-anxiety.webp" alt="A brown and black dog resting on a padded dog bed with a knit blanket in a guest bedroom, with an overnight bag and leash on a chair, a red rubber food toy on the rug, a white pet camera on the dresser and a blurred Thanksgiving dinner gathering through the open door" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">HOLIDAY TRAVEL</span></div>
       <div class="card-body">
         <h2>Thanksgiving and Holiday Travel With a Dog Who Has Separation Anxiety</h2>
@@ -472,7 +473,7 @@
       </div>
     </a>
 
-    <a href="daylight-saving-dog-separation-anxiety" class="guide-card" data-tags="behavior situational">
+    <a href="daylight-saving-dog-separation-anxiety" class="guide-card" data-tags="behavior situational seasonal">
       <div class="card-thumb" style="background:linear-gradient(135deg,#6B8F6C,#C9A26B)"><img src="/images/articles/daylight-saving-dog-separation-anxiety.webp" alt="Calm tricolor mixed-breed dog resting on a round cream sherpa bed with a green knit blanket in a cozy living room at dusk, warm table lamp, autumn trees through the window, a jacket and leash on hooks by the front door, a red rubber food toy on the rug and a small white pet camera on a shelf" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">ROUTINE CHANGES</span></div>
       <div class="card-body">
         <h2>Daylight Saving Time and Dog Separation Anxiety: How to Handle the Clock Change</h2>
@@ -553,7 +554,7 @@
       </div>
     </a>
 
-    <a href="back-to-school-dog-separation-anxiety" class="guide-card" data-tags="behavior situational">
+    <a href="back-to-school-dog-separation-anxiety" class="guide-card" data-tags="behavior situational seasonal">
       <div class="card-thumb" style="background:linear-gradient(135deg,#6B8F6C,#C9A26B)"><img src="/images/articles/back-to-school-dog-separation-anxiety.webp" alt="Calm medium-sized dog resting on a soft bed by a sunny front door in a family home in the morning, with two children&#x27;s school backpacks nearby, a rubber food toy and a lick mat on the floor" width="1200" height="800" loading="lazy" decoding="async"><span class="card-cat">BACK TO SCHOOL</span></div>
       <div class="card-body">
         <h2>Back to School: Dog Separation Anxiety When the Kids Go Back</h2>
@@ -1012,6 +1013,10 @@ function filterGuides(tag, btn) {
       card.style.display = 'none';
     }
   });
+}
+if (location.hash === '#seasonal') {
+  var sb = document.getElementById('filter-seasonal');
+  if (sb) filterGuides('seasonal', sb);
 }
 </script>
 </body>
