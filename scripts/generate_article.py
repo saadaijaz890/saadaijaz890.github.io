@@ -220,7 +220,7 @@ Use this exact pattern (fill in BREED and image-stem):
 ## REQUIRED SCHEMAS
 
 Article:
-{{"@context":"https://schema.org","@type":"Article","headline":"[title]","description":"[meta description]","author":{{"@type":"Organization","name":"AnxietyFreePups"}},"publisher":{{"@type":"Organization","name":"AnxietyFreePups","url":"https://www.anxietyfreepups.com"}},"datePublished":"[YYYY-MM-DD]","dateModified":"[YYYY-MM-DD]","url":"https://www.anxietyfreepups.com/blogs/[slug]","image":{{"@type":"ImageObject","url":"https://www.anxietyfreepups.com/images/articles/[image-stem].webp","width":1200,"height":800}}}
+{{"@context":"https://schema.org","@type":"Article","inLanguage":"en-US","headline":"[title]","description":"[meta description]","author":{{"@type":"Organization","name":"AnxietyFreePups","url":"https://www.anxietyfreepups.com/"}},"publisher":{{"@type":"Organization","name":"AnxietyFreePups","url":"https://www.anxietyfreepups.com"}},"datePublished":"[YYYY-MM-DD]","dateModified":"[YYYY-MM-DD]","url":"https://www.anxietyfreepups.com/blogs/[slug]","image":{{"@type":"ImageObject","url":"https://www.anxietyfreepups.com/images/articles/[image-stem].webp","width":1200,"height":800}}}
 
 BreadcrumbList:
 {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"https://www.anxietyfreepups.com/"}},{{"@type":"ListItem","position":2,"name":"[Breed] Guide","item":"https://www.anxietyfreepups.com/breeds/[breed-slug]"}},{{"@type":"ListItem","position":3,"name":"[Article Title]","item":"https://www.anxietyfreepups.com/blogs/[slug]"}}]}}
