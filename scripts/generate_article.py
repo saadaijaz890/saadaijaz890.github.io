@@ -148,7 +148,7 @@ Use this exact pattern (fill in BREED and image-stem):
 
 ```
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8"/>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
@@ -157,6 +157,7 @@ Use this exact pattern (fill in BREED and image-stem):
   <meta name="description" content="[150-160 chars including breed name and primary keyword]"/>
   <link rel="canonical" href="https://www.anxietyfreepups.com/blogs/[slug]"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:locale" content="en_US"/>
   <meta property="og:url" content="https://www.anxietyfreepups.com/blogs/[slug]"/>
   <meta property="og:title" content="[title]"/>
   <meta property="og:description" content="[description]"/>
